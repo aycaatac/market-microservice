@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vIWtXkzvlmisHtXO6JOlhTvI6acwLjZiM70zWVc2IL0=",
+  "Source": "ShoppingCartService.API",
+  "BasePath": "_content/ShoppingCartService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

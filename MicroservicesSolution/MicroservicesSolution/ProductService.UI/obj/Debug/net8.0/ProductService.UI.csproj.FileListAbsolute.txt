@@ -1,0 +1,8 @@
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.RazorAssemblyInfo.cache
+C:\Users\Lenovo\source\repos\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.UI.RazorAssemblyInfo.cs

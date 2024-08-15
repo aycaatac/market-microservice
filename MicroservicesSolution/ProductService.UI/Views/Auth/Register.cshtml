@@ -1,0 +1,48 @@
+﻿@model RegisterUserDto
+
+<form method="post">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="container p-4">           
+            <div class="row text-center">
+                <h1>Register</h1>
+            </div>
+            <div class="row">
+                <div class="col-6 offset-3 pb-2">
+                    <input asp-for="Name" class="form-control" placeholder="Name.." />
+                    <span asp-validation-for="Name" class="text-danger" />
+                </div>
+                <div class="col-6 offset-3 pb-2">
+                    <input asp-for="Email" class="form-control" placeholder="Email.." />
+                    <span asp-validation-for="Email" class="text-danger" />
+                </div>
+                <div class="col-6 offset-3 pb-2">
+                    <input asp-for="PhoneNumber" class="form-control" placeholder="Phone Number.." />
+                    <span asp-validation-for="PhoneNumber" class="text-danger" />
+                </div>
+                <div class="col-6 offset-3 pb-2">
+                    <input asp-for="Password" class="form-control" placeholder="Password.." />
+                    <span asp-validation-for="Password" class="text-danger" />
+                </div>
+                <div class="col-6 offset-3 pb-2">
+                    <select asp-for="Role" class="form-select" asp-items="@ViewBag.RoleList">
+                        <option disabled selected>--Select Role--</option>
+                    </select>
+                </div>
+                <div class="col-6 offset-3 pb-2 d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-outline-primary me-2 btn-lg" value="Submit">Register</button>
+                </div>
+            </div>
+            @if (TempData["success1"] != null)
+            {
+                <div class="alert alert-success text-center">
+                    @TempData["success1"]
+                </div>
+            }
+        </div>
+    </div>
+</form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
