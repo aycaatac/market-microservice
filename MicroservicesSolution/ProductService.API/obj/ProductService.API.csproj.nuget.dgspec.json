@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj": {}
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj": {
+    "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj",
         "projectName": "ProductService.API",
-        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.API\\ProductService.API.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ProductService.API\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

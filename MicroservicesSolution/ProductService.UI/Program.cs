@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using ProductService.Service;
 using ProductService.Service.IFolder;
 using ProductService.Utility;
@@ -13,6 +14,10 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddHttpClient<IProductService, ProductServiceImp>();
 builder.Services.AddHttpClient<IAuthService, AuthService>();
+builder.Services.AddHttpClient<ICouponService, CouponService>();
+builder.Services.AddHttpClient<ICartService, CartService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<ICouponService, CouponService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IBaseService, BaseService>();
 builder.Services.AddScoped<IProductService, ProductServiceImp>();
@@ -26,10 +31,10 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     options.Cookie.SameSite = SameSiteMode.Lax; // Configure SameSite attribute
 });
 
-
-
 SD.ProductApiBase = builder.Configuration["ServiceUrls:ProductAPI"];
 SD.AuthApiBase = builder.Configuration["ServiceUrls:AuthAPI"];
+SD.CouponApiBase = builder.Configuration["ServiceUrls:CouponAPI"];
+SD.ShoppingCartApiBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
 
 var app = builder.Build();
 

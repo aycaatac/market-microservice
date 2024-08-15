@@ -1,0 +1,61 @@
+﻿@using ProductService.Models
+@model IEnumerable<CartDetailsDto>
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                    <div class="col align-self-center text-right text-muted">3 items</div>
+                </div>
+            </div>
+            @foreach(var item in Model)
+            {
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                       
+                        <div class="col">
+                            <div class="row text-muted">No of products: @item.ProductCount</div>
+                            <div class="row">Product ID: @item.ProductId</div>
+                        </div>
+
+                    </div>
+                </div>
+            }                      
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm" style="background-color: #dedede; padding: 20px; border-radius: 20px; min-height: 250px; margin-bottom: 10px;">
+
+                <div class="col" style="padding-left:10px; padding-top:10px; font-size:20px;">
+                    <strong>Summary</strong>
+                </div>
+
+                <hr style="border-color: rgba(0,0,0,.1); margin: 20px 0;">
+
+                <div class="row" style="margin-bottom: 10px;">
+                    <div class="col" style="padding-left:0; padding-right:5px;">ITEMS 3</div>
+                    <div class="col text-right" style="padding-left:5px;">&euro; 132.00</div>
+                </div>
+
+                <form style="margin-bottom: 20px;">
+                    <p><strong>SHIPPING</strong></p>
+                    <select class="form-control" style="margin-bottom: 10px;">
+                        <option class="text-muted">Standard-Delivery- &euro;5.00</option>
+                    </select>
+                    <p><strong>GIVE CODE</strong></p>
+                    <input id="code" placeholder="Enter your code" class="form-control">
+                </form>
+
+                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 10px 0;">
+                    <div class="col"><strong>TOTAL PRICE</strong></div>
+                    <div class="col text-right"><strong>&euro; 137.00</strong></div>
+                </div>
+
+                <button class="btn btn-primary" style="width: 100%;">CHECKOUT</button>
+            </div>
+        </div>
+
+    </div>
+</div>

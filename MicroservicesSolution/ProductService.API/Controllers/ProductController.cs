@@ -34,8 +34,7 @@ namespace ProductService.API.Controllers
             return resp;
         }
 
-        [HttpGet]       
-     
+        [HttpGet]            
         [Route("GetAllResponse")]
         public ResponseDto GetAllResponse()
         {

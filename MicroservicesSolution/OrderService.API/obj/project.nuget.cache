@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LO1UhcCvVCw=",
+  "dgSpecHash": "7VLNcR9lpJI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\OrderService.API\\OrderService.API.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\OrderService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

@@ -5,6 +5,7 @@ using CouponService.API.Models.DTO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace CouponService.API.Controllers
 {
@@ -42,6 +43,18 @@ namespace CouponService.API.Controllers
             return resp;
         }
 
+        [HttpGet]
+        [Route("GetAllResponse")]
+        public ResponseDto GetAllResponse()
+        {
+            IEnumerable<Coupon> coupons = dbContext.Coupons.ToList<Coupon>(); //?
+            ResponseDto resp = new()
+            {
+                IsSuccess = true,
+                Result = mapper.Map<List<CouponDto>>(coupons)
+            };
+            return resp;
+        }
 
         [HttpGet]
         [Route("GetById/{id:int}")]

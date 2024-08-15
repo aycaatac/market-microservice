@@ -4508,11 +4508,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\AuthService.API\\AuthService.API.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\AuthService.API\\AuthService.API.csproj",
       "projectName": "AuthService.API",
-      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\AuthService.API\\AuthService.API.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\AuthService.API\\AuthService.API.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\AuthService.API\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\AuthService.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KLh4BNxf6AI=",
+  "dgSpecHash": "tRDe7W/D1tc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ProductService.UI\\ProductService.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\ProductService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.2\\microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",

@@ -4589,11 +4589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ShoppingCartService.API\\ShoppingCartService.API.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ShoppingCartService.API\\ShoppingCartService.API.csproj",
       "projectName": "ShoppingCartService.API",
-      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ShoppingCartService.API\\ShoppingCartService.API.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ShoppingCartService.API\\ShoppingCartService.API.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\source\\repos\\MicroservicesSolution\\ShoppingCartService.API\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ShoppingCartService.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
