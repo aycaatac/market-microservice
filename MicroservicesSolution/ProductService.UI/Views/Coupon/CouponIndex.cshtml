@@ -43,10 +43,15 @@
                             <h1 class="card-title pricing-card-title" style="padding-top: 45px;">@(item.DiscountAmount.ToString("c"))</h1>
                             <ul class="list-unstyled mt-3 mb-4">
                                 <li>Discount: @(item.DiscountAmount.ToString("c"))</li>
-                                <li> (Applied to the carts with the minimum total amount of @(item.MinAmount.ToString("c"))</li>
+                                <li>(Applied to the carts with the minimum total amount of @(item.MinAmount.ToString("c")))</li>
                             </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Add Coupon</button>
+                            <form action="/Coupon/ApplyCouponToCart" method="post">
+                                <input type="hidden" name="couponCode" value="@item.CouponCode" />
+                                <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Add Coupon</button>
+                            </form>
+                            
                         </div>
+
                     </div>
                 </div>
             }

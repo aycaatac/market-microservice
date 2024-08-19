@@ -17,6 +17,7 @@ namespace ProductService.Service
             this.clientFactory = clientFactory;
         }
 
+        //access token????????
         public async Task<ResponseDto?> SendAsync(RequestDto requestDto)
         {
             try
@@ -53,7 +54,7 @@ namespace ProductService.Service
                         break;
 
                 }
-
+                
                 apiResponse = await client.SendAsync(message);
 
                 switch (apiResponse.StatusCode)

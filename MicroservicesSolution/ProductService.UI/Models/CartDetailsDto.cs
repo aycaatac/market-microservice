@@ -12,7 +12,7 @@ namespace ProductService.Models
 
        
         public int ProductId { get; set; }
-        //public ProductDto? Product { get; set; }
+        public ProductDto Product { get; set; }
 
         public int ProductCount { get; set; }
     }

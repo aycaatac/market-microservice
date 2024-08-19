@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Azure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -92,67 +93,32 @@ namespace ShoppingCartService.API.Controllers
             return resp;
         }
 
-
-        [HttpPost("ApplyCoupon/{couponCode}/{cartDetailsID}")]
-        public async Task<ResponseDto> ApplyCoupon([FromRoute] string couponCode, [FromRoute] int cartDetailsID)
+        [HttpPost("ApplyCoupon")]
+        public async Task<object> ApplyCoupon([FromBody] ShoppingCartDto cartDto)
         {
             ResponseDto resp = new();
-           
-            CouponDto couponFound = await couponService.GetCoupon(couponCode);
-
-            
-
-            if (couponFound == null)
+            try
+            {
+                var cartFromDb = await dbContext.CartHeaders.FirstAsync(u => u.UserId == cartDto.CartHeader.UserId);
+                cartFromDb.CouponCode = cartDto.CartHeader.CouponCode;
+                dbContext.CartHeaders.Update(cartFromDb);
+                await dbContext.SaveChangesAsync();
+                resp.IsSuccess = true;
+            }
+            catch (Exception ex)
             {
                 resp.IsSuccess = false;
-                resp.Message = "Not Found";
-                return resp;
+                resp.Message = ex.ToString();
             }
-            else
-            {
-                //if coupon exists
-
-                //check if cart details exist
-
-                var existingDetails = await dbContext.CartDetails.AsNoTracking().FirstOrDefaultAsync(x => x.CartDetailsId == cartDetailsID);
-
-                if (existingDetails == null)
-                {
-                    resp.IsSuccess = false;
-                    resp.Message = "Not Found";
-                    return resp;
-                }
-
-                else
-                {
-                    //there is cart details and coupon
-                    //find the cart header and make the discount
-
-                    var existingHeader = await dbContext.CartHeaders.FirstOrDefaultAsync(x => x.CartHeaderId == existingDetails.CartHeaderId);
-                    if (existingHeader == null)
-                    {
-                        resp.IsSuccess = false;
-                        resp.Message = "Not Found";
-                        return resp;
-                    }
-
-                    existingHeader.CouponCode = couponFound.CouponCode;
-                    existingHeader.Discount += couponFound.DiscountAmount;
-                    await dbContext.SaveChangesAsync();
-
-                }
-            }
-            resp.IsSuccess = true;
-            resp.Message = "Coupon has been applied!";
             return resp;
-
         }
 
 
 
 
 
-        [HttpPost("RemoveCoupon/{couponCode}/{cartDetailsID}")]
+
+        [HttpPost("RemoveCouponCont/{couponCode}/{cartDetailsID}")]
         public async Task<ResponseDto> RemoveCoupon([FromRoute] string couponCode, [FromRoute] int cartDetailsID)
         {
             ResponseDto resp = new();
@@ -209,6 +175,7 @@ namespace ShoppingCartService.API.Controllers
 
         }
 
+
         //same method for insert and update
         //why is this async and not the others?
 
@@ -221,13 +188,15 @@ namespace ShoppingCartService.API.Controllers
             ResponseDto resp = new();
             //check if there is an existing product with the product id
             IEnumerable<ProductDto> productDtos = await productService.GetProducts(); //bizim productlar orda olusuyo mu ki yoksa ayrı yerden mi çekiyo 
-
+            ProductDto productFound = new();
             bool exists = false;
             foreach (var product in productDtos)
             {
                 if (product.ProductId == shoppingCartDto.CartDetails.First().ProductId)
                 {
+                    productFound = product;
                     exists = true;
+                    break;
                 }
 
             }
@@ -257,6 +226,7 @@ namespace ShoppingCartService.API.Controllers
 
                         //create cart details object
                         shoppingCartDto.CartDetails.First().CartHeaderId = newHeader.CartHeaderId;//bunu yapmasak?
+                        shoppingCartDto.CartDetails.First().Product = productFound;
                         await dbContext.CartDetails.AddAsync(mapper.Map<CartDetails>(shoppingCartDto.CartDetails.First()));
                         await dbContext.SaveChangesAsync();
 
@@ -274,6 +244,7 @@ namespace ShoppingCartService.API.Controllers
                         {
                             //product icin cart olusturulacak
                             shoppingCartDto.CartDetails.First().CartHeaderId = existingHeader.CartHeaderId;//bunu yapmasak?
+                            shoppingCartDto.CartDetails.First().Product = productFound;
                             await dbContext.CartDetails.AddAsync(mapper.Map<CartDetails>(shoppingCartDto.CartDetails.First()));
                             await dbContext.SaveChangesAsync();
                         }
@@ -302,7 +273,7 @@ namespace ShoppingCartService.API.Controllers
             }
         }
 
-        [HttpDelete("DeleteOneProduct{cartDetailsId:int}")]
+        [HttpDelete("DeleteOneProduct/{cartDetailsId:int}")]
         //[Route("{id:int}")]
         public async Task<ResponseDto> DeleteOneProduct([FromRoute] int cartDetailsId)
         {
@@ -371,7 +342,7 @@ namespace ShoppingCartService.API.Controllers
 
 
 
-        [HttpDelete("DeleteOneKindOfProduct{id:int}")]
+        [HttpDelete("DeleteOneKindOfProduct/{id:int}")]
         //[Route("{id:int}")]
         public async Task<ResponseDto> DeleteOneKindOfProduct([FromRoute] int id)
         {

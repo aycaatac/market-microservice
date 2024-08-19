@@ -74,3 +74,4 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Produ
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ProductService.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.UI\obj\Debug\net8.0\ref\ProductService.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.UI\bin\Debug\net8.0\IdentityModel.dll

@@ -12,7 +12,7 @@ namespace ShoppingCartService.API.Models.DTO
 
        
         public int ProductId { get; set; }
-        //public ProductDto? Product { get; set; }
+        public ProductDto? Product { get; set; }
 
         public int ProductCount { get; set; }
     }

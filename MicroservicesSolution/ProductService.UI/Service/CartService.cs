@@ -13,12 +13,13 @@ namespace ProductService.Service
             this.baseService = baseService;
         }
 
-        public async Task<ResponseDto?> ApplyCoupon(string couponCode, int cartDetailsID)
+        public async Task<ResponseDto?> ApplyCouponAsync(ShoppingCartDto cartDto)
         {
             return await baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.POST,
-                Url = SD.ShoppingCartApiBase + "/api/shoppingcart/ApplyCoupon/" + couponCode + "/" + cartDetailsID
+                Data = cartDto,
+                Url = SD.ShoppingCartApiBase + "/api/shoppingcart/ApplyCoupon"
             });
         }
 
@@ -54,7 +55,7 @@ namespace ProductService.Service
             return await baseService.SendAsync(new RequestDto()
             {
                 ApiType = SD.ApiType.POST,
-                Url = SD.ShoppingCartApiBase + "/api/shoppingcart/RemoveCoupon/" + couponCode + "/" + cartDetailsID
+                Url = SD.ShoppingCartApiBase + "/api/shoppingcart/RemoveCouponCont/" + couponCode + "/" + cartDetailsID
             });
         }
 

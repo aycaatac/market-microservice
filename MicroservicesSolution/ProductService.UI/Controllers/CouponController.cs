@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IdentityModel;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProductService.Models;
+using ProductService.Service;
 using ProductService.Service.IFolder;
 
 namespace ProductService.Controllers
@@ -8,10 +10,12 @@ namespace ProductService.Controllers
     public class CouponController : Controller
     {
         private readonly ICouponService couponService;
+        private readonly ICartService cartService;
 
-        public CouponController(ICouponService couponService)
+        public CouponController(ICouponService couponService, ICartService cartService)
         {
             this.couponService = couponService;
+            this.cartService = cartService;
         }
 
         public async Task<IActionResult> CouponIndex()
@@ -46,6 +50,42 @@ namespace ProductService.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("ApplyCouponToCart")]
+        public async Task<IActionResult> ApplyCouponToCart(string couponCode)
+        {
+            if (ModelState.IsValid)
+            {
+                ShoppingCartDto cartDto = new ShoppingCartDto()
+                {
+                    CartHeader = new CartHeaderDto
+                    {
+                        UserId = User.Claims.Where(u => u.Type == JwtClaimTypes.Subject)?.First()?.Value,
+                        CouponCode = couponCode,
+                    }
+                };
+
+
+
+                CartDetailsDto detailsDto = new CartDetailsDto()
+                {
+                    ProductCount = 1,
+                    ProductId = 1,
+                };
+
+                List<CartDetailsDto> cartDetails = new() { detailsDto };
+                cartDto.CartDetails = cartDetails;
+                ResponseDto? resp = await cartService.ApplyCouponAsync(cartDto);
+                if (resp.IsSuccess)
+                {
+                    return RedirectToAction("ShoppingCartIndex", "ShoppingCart");
+                }
+
+            }
+
+            return View();
         }
 
         public async Task<IActionResult> CouponDelete(int couponId)
