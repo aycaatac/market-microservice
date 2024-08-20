@@ -1,9 +1,11 @@
 ﻿using AuthService.API.Models.Domain;
 using AuthService.API.Models.DTO;
 using AuthService.API.Service.IService;
+using MessageBus;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AuthService.API.Controllers
@@ -12,11 +14,15 @@ namespace AuthService.API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IAuthService authService;        
+        private readonly IAuthService authService;
+        private readonly IMessageBus messageBus;
+        private readonly IConfiguration configuration;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, IMessageBus messageBus, IConfiguration configuration)
         {
             this.authService = authService;
+            this.messageBus = messageBus;
+            this.configuration = configuration;
         }
 
         [HttpPost]
@@ -34,6 +40,19 @@ namespace AuthService.API.Controllers
             }            
             resp.Message = "User was registered! Please login!";
             resp.IsSuccess = true;
+
+            ResponseDto _response = new();
+            try
+            {
+                await messageBus.publishMessage(registerUserDto.Email, configuration.GetValue<string>("TopicAndQueueNames:AycaMarketRegisterQueue"));
+                _response.IsSuccess = true;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.ToString();
+            }
+            
             return resp;
         }
 

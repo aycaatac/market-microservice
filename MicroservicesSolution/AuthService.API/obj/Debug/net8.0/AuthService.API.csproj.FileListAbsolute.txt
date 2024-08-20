@@ -583,3 +583,10 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthS
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\AuthService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\ref\AuthService.API.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\AuthService.API.sourcelink.json
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\bin\Debug\net8.0\MessageBus.pdb
