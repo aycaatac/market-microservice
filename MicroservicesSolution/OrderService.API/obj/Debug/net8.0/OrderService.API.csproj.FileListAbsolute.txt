@@ -294,3 +294,10 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\ref\OrderService.API.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.sourcelink.json
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.pdb

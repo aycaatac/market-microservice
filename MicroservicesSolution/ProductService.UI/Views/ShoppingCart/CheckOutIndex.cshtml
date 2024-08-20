@@ -1,0 +1,100 @@
+﻿@model ShoppingCartDto
+<form method="post">
+    <input asp-for="CartHeader.UserId" hidden />
+    <input asp-for="CartHeader.CartHeaderId" hidden />
+    <input asp-for="CartHeader.CouponCode" hidden />
+    <input asp-for="CartHeader.Discount" hidden />
+    <input asp-for="CartHeader.CartTotal" hidden />
+    <div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
+        <div class="row align-items-center">
+            <div class="col text-center text-md-start" style="padding-left: 15px; padding-top: 5px;">
+                <h1 style="color:black; margin-left: 10px; margin-top: 5px;">Summary</h1>
+            </div>
+            <div class="col text-end">
+                <a asp-action="ShoppingCartIndex" class="btn btn-outline-warning">Back to Cart</a>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-7 col-12">
+                <div class="row pt-2">
+                    <div class="col-12 pt-2">
+                        <label class="col-form-label">Order will be ready in 30 minutes after placing the order.</label>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input asp-for="CartHeader.Name" placeholder="full name..." class="form-control" />
+                        <span asp-validation-for="CartHeader.Name" class="text-danger"></span>
+                    </div>
+                   
+                    <div class="col-12 py-2">
+                        <input asp-for="CartHeader.Email" placeholder="email..." class="form-control" />
+                        <span asp-validation-for="CartHeader.Email" class="text-danger"></span>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input asp-for="CartHeader.PhoneNumber" placeholder="phone number..." class="form-control" />
+                        <span asp-validation-for="CartHeader.PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="col-12 py-2">
+                        <input asp-for="CartHeader.Address" placeholder="address..." class="form-control" />
+                        <span asp-validation-for="CartHeader.Address" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-12">
+                <div class="card mt-2">
+                    <div class="card-body">
+                        <div class="d-none d-lg-block">
+                            <div class="row text-danger">
+                                <div class="col-6">Product Details</div>
+                                <div class="col-3">Price</div>
+                                <div class="col-3 text-center">Count</div>
+                            </div>
+                        </div>
+                        <hr />
+                        @foreach (var cart in Model.CartDetails)
+                        {
+                            <div class="row h-100">
+                                <div class="col-6"><span style="font-size:20px">@cart.Product.Name</span></div>
+                                <div class="col-3" style="font-size:11px;"><span style="font-size:17px;">@cart.Product.Price.ToString("c")</span></div>
+                                <div class="col-3 text-center" style="font-size:11px;">
+                                    <span style="font-size:17px;">@cart.ProductCount</span>
+                                </div>
+                            </div>
+                            <hr />
+                        }
+                        <div class="row">
+                            <div class="col-12" style="padding: 0;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; color: green; margin: 0; padding: 2px 0;">
+                                    <strong>Total Discount: </strong>
+                                    <span>-@(Model.CartHeader.Discount.ToString("c"))</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 2px 0;">
+                                    <strong>Cart Total: </strong>
+                                    <span>@(Model.CartHeader.CartTotal.ToString("c"))</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <button type="submit" class="btn btn-success form-control ">
+                                    <span>Place Order</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}
+

@@ -6,42 +6,57 @@ using OrderService.API.Data;
 using OrderService.API.Models.Domain;
 using OrderService.API.Models.DTO;
 using OrderService.API.Service;
+using OrderService.API.Service.IService;
+using OrderService.API.Utility;
 
 
 namespace OrderService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrderController : ControllerBase
+    public class OrderController: ControllerBase
     {
-        private readonly ILogger<OrderController> logger;
-        private readonly IMessageProducer messageProducer;
+        
         private readonly AppOrderDbContext dbContext;
-        private readonly IMapper mapper;
+        private  IProductService productService;
+        private  IMapper mapper;
 
-        public OrderController(ILogger<OrderController> logger, IMessageProducer messageProducer, AppOrderDbContext dbContext
-            ,IMapper mapper)
+        public OrderController(AppOrderDbContext dbContext,
+            IProductService productService, IMapper mapper)
         {
-            this.logger = logger;
-            this.messageProducer = messageProducer;
             this.dbContext = dbContext;
+            this.productService = productService;
             this.mapper = mapper;
         }
 
-        [HttpPost("Create")]
-        public async Task<IActionResult> Create(OrderDto orderDto)
+
+        [HttpPost("CreateOrder")]
+        public async Task<ResponseDto> CreateOrder([FromBody] ShoppingCartDto cartDto)
         {
-            //do we design the model state requirements or are they ready 
-            if (!ModelState.IsValid)
+            ResponseDto response = new();
+            try
             {
-                return BadRequest();
+                OrderHeaderDto orderHeaderDto = mapper.Map<OrderHeaderDto>(cartDto.CartHeader);
+                orderHeaderDto.OrderTime = DateTime.Now;
+                orderHeaderDto.Status = SD.Status_Pending;
+                orderHeaderDto.OrderDetails = mapper.Map<IEnumerable<OrderDetailsDto>>(cartDto.CartDetails);
+
+                OrderHeader orderCreated = dbContext.OrderHeaders.Add(mapper.Map<OrderHeader>(orderHeaderDto)).Entity;
+                await dbContext.SaveChangesAsync();
+
+                orderHeaderDto.OrderHeaderId = orderCreated.OrderHeaderId;
+                response.Result = orderHeaderDto;
+                response.IsSuccess = true;
+
             }
-
-
-            await dbContext.Orders.AddAsync(mapper.Map<Order>(orderDto));
-            await dbContext.SaveChangesAsync();
-
-            return Ok();
+            catch (Exception ex)
+            {
+                response.IsSuccess = false;
+                response.Message = ex.Message.ToString();
+                
+            }
+            return response;
         }
     }
+   
 }

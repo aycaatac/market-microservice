@@ -136,7 +136,7 @@
                             <div class="col"><strong>Cart Total:</strong></div>
                             <div class="col" style="text-align: right;"><strong>@(Model.CartHeader.CartTotal.ToString("c"))</strong></div>
                         </div>
-                        <button class="btn btn-primary" style="width: 100%;margin-top: 10px;">CHECKOUT</button>
+                        <a asp-action="CheckoutIndex" class="btn btn-primary" style="width: 100%;margin-top: 10px;">CHECKOUT</a>
 
                         <!-- Begin Email Cart Form -->
                         <form asp-action="EmailCart" method="post" style="width: 100%; margin-top: 10px;">

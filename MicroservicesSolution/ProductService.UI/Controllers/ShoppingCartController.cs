@@ -13,12 +13,15 @@ namespace ProductService.Controllers
     {
         private readonly ICartService cartService;
         private readonly IProductService productService;
+        private readonly IOrderService orderService;
         private readonly ICouponService couponService;
 
-        public ShoppingCartController(ICartService cartService, IProductService productService)
+        public ShoppingCartController(ICartService cartService, 
+            IProductService productService, IOrderService orderService)
         {
             this.cartService = cartService;
-            this.productService = productService;          
+            this.productService = productService;
+            this.orderService = orderService;
         }
 
         public async Task<IActionResult> ShoppingCartIndex()
@@ -27,6 +30,33 @@ namespace ProductService.Controllers
             return View(s);
 
         }
+
+        public async Task<IActionResult> CheckOutIndex()
+        {
+            ShoppingCartDto s = await LoadCartByUserIndex();
+            return View(s);
+        }
+
+        [HttpPost]
+        [ActionName("CheckOutIndex")]
+        public async Task<IActionResult> CheckOutIndex(ShoppingCartDto cartDto)
+        {
+            ShoppingCartDto cart = await LoadCartByUserIndex();
+            cart.CartHeader.PhoneNumber = cartDto.CartHeader.PhoneNumber;
+            cart.CartHeader.Email = cartDto.CartHeader.Email;
+            cart.CartHeader.Name = cartDto.CartHeader.Name;
+            cart.CartHeader.Address = cartDto.CartHeader.Address;
+            var response = await orderService.CreateOrder(cart);
+            OrderHeaderDto orderHeaderDto = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
+
+            if(response != null && response.IsSuccess)
+            {
+
+            }
+
+            return View(cart);
+        }
+
 
         public async Task<ShoppingCartDto> LoadCartByUserIndex()
         {

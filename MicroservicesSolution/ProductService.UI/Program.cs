@@ -16,6 +16,8 @@ builder.Services.AddHttpClient<IProductService, ProductServiceImp>();
 builder.Services.AddHttpClient<IAuthService, AuthService>();
 builder.Services.AddHttpClient<ICouponService, CouponService>();
 builder.Services.AddHttpClient<ICartService, CartService>();
+builder.Services.AddHttpClient<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
@@ -34,6 +36,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 SD.ProductApiBase = builder.Configuration["ServiceUrls:ProductAPI"];
 SD.AuthApiBase = builder.Configuration["ServiceUrls:AuthAPI"];
 SD.CouponApiBase = builder.Configuration["ServiceUrls:CouponAPI"];
+SD.OrderApiBase = builder.Configuration["ServiceUrls:OrderAPI"];
 SD.ShoppingCartApiBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
 builder.Services.ConfigureApplicationCookie(options =>
 {
