@@ -54,13 +54,8 @@
                                             </form>
                                         </div>
                                     </div>
-                                    @if (TempData["carterror"] != null)
-                                    {
-                                        <div id="notification" class="alert alert-danger alert-dismissible fade show" role="alert">
-                                            @TempData["carterror"]
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                        </div>
-                                    }
+                                    
+
                                 </div>
                             </div>
                         }
@@ -159,6 +154,13 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                             </div>
                         }
+                        @if (TempData["success"] != null)
+                        {
+                            <div class="alert alert-success">
+                                @TempData["success"]
+                            </div>
+                        }
+
                     </div>
                 </div>
             }

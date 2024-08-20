@@ -145,3 +145,8 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailS
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\obj\Debug\net8.0\MailService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\obj\Debug\net8.0\MailService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\obj\Debug\net8.0\ref\MailService.API.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MailService.API\bin\Debug\net8.0\Newtonsoft.Json.dll
