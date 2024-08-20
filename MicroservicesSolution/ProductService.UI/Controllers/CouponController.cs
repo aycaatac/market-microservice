@@ -1,4 +1,5 @@
 ﻿using IdentityModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProductService.Models;
@@ -37,6 +38,7 @@ namespace ProductService.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> CouponCreate(CouponDto model)
         {
             if (ModelState.IsValid)
@@ -46,6 +48,10 @@ namespace ProductService.Controllers
                 if (response.IsSuccess == true) //questionable
                 {
                     return RedirectToAction(nameof(CouponIndex));
+                }
+                else
+                {
+                    TempData["couponerror"] = response.Message;
                 }
             }
 
@@ -82,12 +88,16 @@ namespace ProductService.Controllers
                 {
                     return RedirectToAction("ShoppingCartIndex", "ShoppingCart");
                 }
+                else
+                {
+                    TempData["couponerror"] = resp.Message;
+                }
 
             }
 
-            return View();
+            return RedirectToAction("CouponIndex", "Coupon");
         }
-
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> CouponDelete(int couponId)
         {
             if (ModelState.IsValid)
@@ -98,10 +108,15 @@ namespace ProductService.Controllers
                 {
                     return RedirectToAction(nameof(CouponIndex));
                 }
+                else
+                {
+                    TempData["couponerror"] = response.Message;
+                }
+
             }
             return View();
         }
-
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> CouponUpdate(CouponDto model)
         {
             if (ModelState.IsValid)
@@ -111,6 +126,10 @@ namespace ProductService.Controllers
                 if (response.IsSuccess == true) //questionable
                 {
                     return RedirectToAction(nameof(CouponIndex));
+                }
+                else
+                {
+                    TempData["couponerror"] = response.Message;
                 }
             }
             return View(model);

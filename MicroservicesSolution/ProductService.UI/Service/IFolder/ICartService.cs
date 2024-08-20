@@ -11,6 +11,7 @@ namespace ProductService.Service.IFolder
         Task<ResponseDto?> Upsert(ShoppingCartDto shoppingCartDto);
         Task<ResponseDto?> DeleteOneKindOfProduct(int cartDetailsId);
         Task<ResponseDto?> DeleteOneProduct(int cartDetailsId);
+        Task<ResponseDto?> SendEmail(ShoppingCartDto cartDto);
     }
 }
  

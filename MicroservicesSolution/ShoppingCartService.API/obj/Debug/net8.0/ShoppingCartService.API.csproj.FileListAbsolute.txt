@@ -294,3 +294,9 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Shopp
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ref\ShoppingCartService.API.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\MessageBusService.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\MessageBusService.pdb

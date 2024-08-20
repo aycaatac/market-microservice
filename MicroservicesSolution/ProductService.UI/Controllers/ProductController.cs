@@ -1,4 +1,5 @@
 ﻿using IdentityModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProductService.Models;
@@ -29,15 +30,21 @@ namespace ProductService.Controllers
             {
                 products = JsonConvert.DeserializeObject<List<ProductDto>>(Convert.ToString(response.Result));
             }
+            else
+            {
+                TempData["producterror"] = response.Message;
+            }
             return View(products);
         }
 
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> ProductCreate()
         {            
             return View();
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> ProductCreate(ProductDto model)
         {
             if (ModelState.IsValid)
@@ -47,6 +54,10 @@ namespace ProductService.Controllers
                 if (response.IsSuccess == true) //questionable
                 {
                     return RedirectToAction(nameof(ProductIndex));
+                }
+                else
+                {
+                    TempData["producterror"] = response.Message;
                 }
             }
 
@@ -81,14 +92,17 @@ namespace ProductService.Controllers
                 {
                     return RedirectToAction("ShoppingCartIndex", "ShoppingCart");
                 }
-
+                else
+                {
+                    TempData["producterror"] = resp.Message;
+                }
             }
 
             return View();
         }
 
 
-
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> ProductDelete(int productId)
         {
             if (ModelState.IsValid)
@@ -99,10 +113,15 @@ namespace ProductService.Controllers
                 {
                     return RedirectToAction(nameof(ProductIndex));
                 }
+                else
+                {
+                    TempData["producterror"] = response.Message;
+                }
             }
             return View();
         }
 
+        [Authorize(Roles = "admin,Admin,ADMIN,admın")]
         public async Task<IActionResult> ProductUpdate(ProductDto model)
         {
             if (ModelState.IsValid)
@@ -112,6 +131,10 @@ namespace ProductService.Controllers
                 if (response.IsSuccess == true) //questionable
                 {
                     return RedirectToAction(nameof(ProductIndex));
+                }
+                else
+                {
+                    TempData["producterror"] = response.Message;
                 }
             }
             return View(model);

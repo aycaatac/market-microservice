@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService.API", "Produ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService.API", "AuthService.API\AuthService.API.csproj", "{06BAEF7A-9C46-4A6B-9AC8-364189A717FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBusService", "MessageBusService\MessageBusService.csproj", "{F15DAC94-B0D9-4891-BBD1-24B8A4596355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{06BAEF7A-9C46-4A6B-9AC8-364189A717FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06BAEF7A-9C46-4A6B-9AC8-364189A717FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06BAEF7A-9C46-4A6B-9AC8-364189A717FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15DAC94-B0D9-4891-BBD1-24B8A4596355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15DAC94-B0D9-4891-BBD1-24B8A4596355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15DAC94-B0D9-4891-BBD1-24B8A4596355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15DAC94-B0D9-4891-BBD1-24B8A4596355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{C6CC56F8-C3BF-4599-8743-5177176B7D64} = {D739E89F-7747-4496-8FE3-65DC759123E7}
 		{F48FF45F-7189-441E-BE06-11640E97C282} = {C4DA163E-2231-4C61-A019-363B0B80F3A9}
 		{06BAEF7A-9C46-4A6B-9AC8-364189A717FC} = {C4DA163E-2231-4C61-A019-363B0B80F3A9}
+		{F15DAC94-B0D9-4891-BBD1-24B8A4596355} = {8CEDFAFE-4B4F-4EA6-9094-F8137A7A8100}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5302BBC-0415-4D55-B52C-A3CA5127F98F}

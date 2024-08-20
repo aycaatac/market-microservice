@@ -35,6 +35,10 @@ SD.ProductApiBase = builder.Configuration["ServiceUrls:ProductAPI"];
 SD.AuthApiBase = builder.Configuration["ServiceUrls:AuthAPI"];
 SD.CouponApiBase = builder.Configuration["ServiceUrls:CouponAPI"];
 SD.ShoppingCartApiBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.AccessDeniedPath = "/Auth/AccessDenied"; // Path to your Access Denied page
+});
 
 var app = builder.Build();
 

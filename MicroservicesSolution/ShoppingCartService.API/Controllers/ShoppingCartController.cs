@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Azure;
+using MessageBusService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using ShoppingCartService.API.Data;
 using ShoppingCartService.API.Models.Domain;
 using ShoppingCartService.API.Models.DTO;
@@ -17,17 +19,22 @@ namespace ShoppingCartService.API.Controllers
     public class ShoppingCartController : ControllerBase
     {
         private readonly AppShoppingCartDbContext dbContext;
-        private readonly IMapper mapper;
-        private readonly IProductService productService;
-        private readonly ICouponService couponService;
+        private  IMapper mapper;
+        private  IProductService productService;
+        private  ICouponService couponService;
+        private readonly IMessageBus messageBus;
+        private readonly IConfiguration configuration;
 
         public ShoppingCartController(AppShoppingCartDbContext appShoppingCartDbContext,
-            IMapper mapper, IProductService productService, ICouponService couponService)
+            IMapper mapper, IProductService productService, ICouponService couponService,
+            IMessageBus messageBus, IConfiguration configuration)
         {
             this.dbContext = appShoppingCartDbContext;
             this.mapper = mapper;
             this.productService = productService;
             this.couponService = couponService;
+            this.messageBus = messageBus;
+            this.configuration = configuration;
         }
 
         [HttpGet("GetShoppingCart/{userId}")]
@@ -100,10 +107,42 @@ namespace ShoppingCartService.API.Controllers
             try
             {
                 var cartFromDb = await dbContext.CartHeaders.FirstAsync(u => u.UserId == cartDto.CartHeader.UserId);
-                cartFromDb.CouponCode = cartDto.CartHeader.CouponCode;
-                dbContext.CartHeaders.Update(cartFromDb);
-                await dbContext.SaveChangesAsync();
-                resp.IsSuccess = true;
+                if(cartFromDb == null)
+                {
+                    resp.Message = "Not Found";
+                    resp.IsSuccess = false;
+                }
+                else
+                {
+
+                    CouponDto coupon = await couponService.GetCoupon(cartDto.CartHeader.CouponCode);
+
+                    if (coupon == null)
+                    {
+                        resp.Message = "Not Found";
+                        resp.IsSuccess = false;
+                    }
+                    else
+                    {
+                        var response = await GetCart(cartFromDb.UserId);
+                        ShoppingCartDto cart = (ShoppingCartDto)response.Result;
+                        double total = cart.CartHeader.CartTotal;
+
+                        if (coupon.MinAmount > total)
+                        {
+                            resp.Message = "Cart total is less than this coupons requirement!";
+                            resp.IsSuccess = false;
+                        }
+                        else
+                        {
+                            cartFromDb.CouponCode = cartDto.CartHeader.CouponCode;
+                            dbContext.CartHeaders.Update(cartFromDb);
+                            await dbContext.SaveChangesAsync();
+                            resp.IsSuccess = true;
+                        }
+                    }
+                        
+                }
             }
             catch (Exception ex)
             {
@@ -389,6 +428,29 @@ namespace ShoppingCartService.API.Controllers
             resp.Message = "The product was deleted from the cart!";
             return resp;
         }
+
+
+
+        [HttpPost("EmailCartRequest")]
+        public async Task<object> EmailCartRequest([FromBody] ShoppingCartDto cartDto)
+        {
+            ResponseDto resp = new();
+            try
+            {
+                await messageBus.PublishMessage(cartDto, configuration.GetValue<string>("TopicAndQueueNames:EmailQueue"));
+
+                resp.Result = true;
+                resp.IsSuccess = true;
+            }catch(Exception ex)
+            {
+                resp.IsSuccess = false;
+                resp.Message = ex.ToString();
+            }
+
+            return resp;
+        }
+       
+       
     }
 
 }

@@ -68,5 +68,15 @@ namespace ProductService.Service
                 Url = SD.ShoppingCartApiBase + "/api/shoppingcart/CartUpsert"
             });
         }
+
+        public async Task<ResponseDto?> SendEmail(ShoppingCartDto cartDto)
+        {
+            return await baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = cartDto,
+                Url = SD.ShoppingCartApiBase + "/api/shoppingcart/EmailCartRequest"
+            });
+        }
     }
 }

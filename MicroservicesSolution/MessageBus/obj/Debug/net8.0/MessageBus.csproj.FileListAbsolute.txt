@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\bin\Debug\net8.0\MessageBus.deps.json
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\bin\Debug\net8.0\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\bin\Debug\net8.0\MessageBus.pdb
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.AssemblyInfo.cs
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\refint\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\MessageBus.pdb
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBus\obj\Debug\net8.0\ref\MessageBus.dll

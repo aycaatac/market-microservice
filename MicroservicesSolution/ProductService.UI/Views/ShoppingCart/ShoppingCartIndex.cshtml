@@ -3,122 +3,203 @@
 <link rel="stylesheet" href="~/css/site.css" />
 
 <div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
-    <div class="row">
-        <div class="col-md-8 cart">
-            <div class="title">
-                <div class="row">
-                    <div class="col"><h4><b>Shopping Cart</b></h4></div>
-                </div>
-            </div>
-            @if (Model.CartDetails != null)
-            {@foreach (var cart in Model.CartDetails)
+    @if (Model.CartHeader != null && Model.CartDetails?.Count() > 0)
+    {
+         <form method="post" asp-action="EmailCart">
+    <br />
+    <input asp-for="CartHeader.UserId" hidden />
+    <input asp-for="CartHeader.CartHeaderId" hidden />   
+      
+        <div class="row">
+            <div class="col-md-8 cart">
+
+                @if (Model.CartHeader != null)
                 {
-                    <div class="row border-top border-bottom py-3">
-                        <div class="row main align-items-center">
-                            <div class="col-3">
-                                <img class="img-fluid rounded" src="@cart.Product.ImageUrl" style="max-height: 150px; object-fit: cover;">
-                            </div>
-                            <div class="col-5">
-                                <div class="row text-muted"><strong>@cart.Product.Name</strong></div>
-                                <div class="row">@cart.Product.CategoryName</div>
-                            </div>
-                            <div class="col-2 text-right">
-                                <span>@(cart.Product.Price.ToString("c"))</span>
-                            </div>
-                            <div class="col-2 text-center">
-                                <div style="display: flex; align-items: center; justify-content: center;">
-                                    <form action="/ShoppingCart/DeleteOneProductFromCart" method="post" style="display: inline;">
-                                        <input type="hidden" name="cartDetailsId" value="@cart.CartDetailsId" />
-                                        <button type="submit" class="btn btn-primary btn-sm rounded-circle" style="width: 30px; height: 30px; line-height: 1.5; padding: 0;">
-                                            <i class="bi bi-dash"></i>
-                                        </button>
-                                    </form>
-                                    <span class="mx-2">@cart.ProductCount</span>
-                                    <form action="/ShoppingCart/AddToCart" method="post" style="display: inline;">
-                                        <input type="hidden" name="productId" value="@cart.ProductId" />
-                                        <button type="submit" class="btn btn-primary btn-sm rounded-circle" style="width: 30px; height: 30px; line-height: 1.5; padding: 0;">
-                                            <i class="bi bi-plus"></i>
-                                        </button>
-                                    </form>
-                                    <form action="/ShoppingCart/DeleteOneKindOfProductFromCart" method="post" style="display: inline; margin-left: 10px;">
-                                        <input type="hidden" name="cartDetailsId" value="@cart.CartDetailsId" />
-                                        <button type="submit" class="btn btn-link p-0" style="width: 30px; height: 40px;">
-                                            <i class="bi bi-trash" style="font-size: 1.5rem; color: red;"></i>
-                                        </button>
-                                    </form>
+                    <div class="title">
+                        <div class="row">
+                            <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                        </div>
+                    </div>
+                    @if (Model.CartDetails != null)
+                    {
+                        @foreach (var cart in Model.CartDetails)
+                        {
+                            <div class="row border-top border-bottom py-3">
+                                <div class="row main align-items-center">
+                                    <div class="col-3">
+                                        <img class="img-fluid rounded" src="@cart.Product.ImageUrl" style="max-height: 150px; object-fit: cover;">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="row text-muted"><strong>@cart.Product.Name</strong></div>
+                                        <div class="row">@cart.Product.CategoryName</div>
+                                    </div>
+                                    <div class="col-2 text-right">
+                                        <span>@(cart.Product.Price.ToString("c"))</span>
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <div style="display: flex; align-items: center; justify-content: center;">
+                                            <form action="/ShoppingCart/DeleteOneProductFromCart" method="post" style="display: inline;">
+                                                <input type="hidden" name="cartDetailsId" value="@cart.CartDetailsId" />
+                                                <button type="submit" class="btn btn-primary btn-sm rounded-circle" style="width: 30px; height: 30px; line-height: 1.5; padding: 0;">
+                                                    <i class="bi bi-dash"></i>
+                                                </button>
+                                            </form>
+                                            <span class="mx-2">@cart.ProductCount</span>
+                                            <form action="/ShoppingCart/AddToCart" method="post" style="display: inline;">
+                                                <input type="hidden" name="productId" value="@cart.ProductId" />
+                                                <button type="submit" class="btn btn-primary btn-sm rounded-circle" style="width: 30px; height: 30px; line-height: 1.5; padding: 0;">
+                                                    <i class="bi bi-plus"></i>
+                                                </button>
+                                            </form>
+                                            <form action="/ShoppingCart/DeleteOneKindOfProductFromCart" method="post" style="display: inline; margin-left: 10px;">
+                                                <input type="hidden" name="cartDetailsId" value="@cart.CartDetailsId" />
+                                                <button type="submit" class="btn btn-link p-0" style="width: 30px; height: 40px;">
+                                                    <i class="bi bi-trash" style="font-size: 1.5rem; color: red;"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    @if (TempData["carterror"] != null)
+                                    {
+                                        <div id="notification" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            @TempData["carterror"]
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    }
                                 </div>
+                            </div>
+                        }
+                    }
+                }
+                else
+                {
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h1 class="display-4">Your shopping cart is empty right now!</h1>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-12 text-end">
+                                <a href="/Product/ProductIndex" class="btn btn-outline-primary me-2">
+                                    Start Shopping
+                                </a>
                             </div>
                         </div>
                     </div>
                 }
+            </div>
+            @if (Model.CartHeader != null)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm" style="background-color: #dedede; padding: 20px; border-radius: 20px; min-height: 250px; margin-bottom: 10px;">
+                        <div class="col" style="padding-left:0px; padding-top:10px; font-size:20px;">
+                            <strong>Summary</strong>
+                        </div>
+                        <hr style="border-color: rgba(0,0,0,.1); margin: 20px 0;">
+                        <form style="margin-bottom: 20px;">
+                            <p><strong>Shipping</strong></p>
+                            <select class="form-control" style="margin-bottom: 10px;">
+                                <option class="text-muted">Standard-Delivery- ₺25.00</option>
+                            </select>
+                            @if (string.IsNullOrEmpty(Model.CartHeader.CouponCode))
+                            {
+                                <p><strong>Coupon:</strong></p>
+                                <div class="input-group">
+                                    <div class="input-group-append">
+                                        <a href="/Coupon/CouponIndex" class="btn btn-primary">Add a Coupon</a>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="col-12" style="padding-bottom: 5px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <p><strong>Coupon:</strong></p>
+                                        <p style="margin-bottom: 0;">"@Model.CartHeader.CouponCode"</p>
+                                        <a href="/ShoppingCart/RemoveCouponWeb?couponCode=@Model.CartHeader.CouponCode" class="btn btn-primary">Remove Coupon</a>
+                                    </div>
+                                </div>
+                            }
+
+                        </form>
+                        <div class="row">
+                            @foreach (var cart in Model.CartDetails)
+                            {
+                                <div class="col-12" style="padding-bottom: 5px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <strong>@cart.Product.Name</strong>
+                                        <span>@(cart.Product.Price.ToString("c")) x @cart.ProductCount</span>
+                                    </div>
+                                </div>                                   
+                            }
+
+                            @if (!string.IsNullOrEmpty(Model.CartHeader.CouponCode) && Model.CartHeader.CouponCode != "string")
+                            {
+                                <div class="col-12" style="padding-bottom: 5px;">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <p style="opacity: 0.5; margin-bottom: 0;">Coupon: "@Model.CartHeader.CouponCode"</p>
+                                        <strong style="margin-bottom: 0;">- ₺@Model.CartHeader.Discount,00</strong>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); margin-top: -5px;">
+                            <div class="col"><strong>Cart Total:</strong></div>
+                            <div class="col" style="text-align: right;"><strong>@(Model.CartHeader.CartTotal.ToString("c"))</strong></div>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;margin-top: 10px;">CHECKOUT</button>
+
+                        <!-- Begin Email Cart Form -->
+                        <form asp-action="EmailCart" method="post" style="width: 100%; margin-top: 10px;">
+                            <!-- Binding the ShoppingCartDto properties using asp-for -->
+                            <input asp-for="CartHeader.CartHeaderId" type="hidden" />
+                            <input asp-for="CartHeader.UserId" type="hidden" />
+                            <input asp-for="CartHeader.CouponCode" type="hidden" />
+                            <input asp-for="CartHeader.CartTotal" type="hidden" />
+                            <input asp-for="CartHeader.Discount" type="hidden" />
+                            
+                            @if (Model.CartDetails == null)
+                            {
+                            Model.CartDetails = new List<CartDetailsDto>
+                                ();
+                                }
+
+                               
 
 
+                            <button type="submit" class="btn btn-primary" style="width: 100%; background-color: white; color: black;">EMAIL CART</button>
+                        </form>
+                        <!-- End Email Cart Form -->
 
-
+                        @if (TempData["carterror"] != null)
+                        {
+                            <div id="notification" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                @TempData["carterror"]
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        }
+                    </div>
+                </div>
             }
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm" style="background-color: #dedede; padding: 20px; border-radius: 20px; min-height: 250px; margin-bottom: 10px;">
-                <div class="col" style="padding-left:0px; padding-top:10px; font-size:20px;">
-                    <strong>Summary</strong>
-                </div>
-                <hr style="border-color: rgba(0,0,0,.1); margin: 20px 0;">
-                <form style="margin-bottom: 20px;">
-                    <p><strong>Shipping</strong></p>
-                    <select class="form-control" style="margin-bottom: 10px;">
-                        <option class="text-muted">Standard-Delivery- ₺25.00</option>
-                    </select>
-                    @if (string.IsNullOrEmpty(Model.CartHeader.CouponCode))
-                    {
-                        <p><strong>Coupon:</strong></p>
-                        <div class="input-group">
-                            <div class="input-group-append">
-                                <a href="/Coupon/CouponIndex" class="btn btn-primary">Add a Coupon</a>
-                            </div>
-                        </div>
-                    }
-                    else
-                    {
-                        <div class="col-12" style="padding-bottom: 5px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <p><strong>Coupon:</strong></p>
-                                <p style="margin-bottom: 0;">"@Model.CartHeader.CouponCode"</p>
-                                <a href="/ShoppingCart/RemoveCouponWeb?couponCode=@Model.CartHeader.CouponCode" class="btn btn-primary">Remove Coupon</a>
-                            </div>
-                        </div>
-                    }
+        </form>
+    }
+    else
+    {
 
-                </form>
-                <div class="row">
-                    @foreach (var cart in Model.CartDetails)
-                    {
-                        <div class="col-12" style="padding-bottom: 5px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <strong>@cart.Product.Name</strong>
-                                <span>@(cart.Product.Price.ToString("c")) x @cart.ProductCount</span>
-                            </div>
-                        </div>
-                    }
-                   
-                   @if (!string.IsNullOrEmpty(Model.CartHeader.CouponCode) && Model.CartHeader.CouponCode != "string")
-                    {
-                        <div class="col-12" style="padding-bottom: 5px;">
-                            <div style="display: flex; justify-content: space-between;">
-                                <p style="opacity: 0.5; margin-bottom: 0;">Coupon: "@Model.CartHeader.CouponCode"</p>
-                                <strong style="margin-bottom: 0;">- ₺@Model.CartHeader.Discount,00</strong>
-                            </div>
-                        </div>
-                    }
-                </div>
-                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); margin-top: -5px;">
-                    <div class="col"><strong>Cart Total:</strong></div>
-                    <div class="col" style="text-align: right;"><strong>@(Model.CartHeader.CartTotal.ToString("c"))</strong></div>
-                </div>
-                <button class="btn btn-primary" style="width: 100%;">CHECKOUT</button>
+        <div class="card-body p-4">
+            <div class="text-center">
+                <h1 class="display-4">Your shopping cart is empty right now!</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-12 text-end">
+                    <a href="/Product/ProductIndex" class="btn btn-outline-primary me-2">
+                        Start Shopping
+                    </a>
 
+                </div>
             </div>
         </div>
-    </div>
+    }
 </div>
 
 <!-- Add Bootstrap Icons -->

@@ -37,7 +37,7 @@ namespace ProductService.Controllers
         public async Task<IActionResult> Login(LoginUserDto userDto)
         {
             ResponseDto resp = await authService.LoginAsync(userDto);
-            
+            TempData["success1"] = null;
             if (resp.IsSuccess)
             {
                 ReturnLoginUserDto responseDto = 
@@ -49,7 +49,7 @@ namespace ProductService.Controllers
             }
             else
             {
-                Console.WriteLine("custom error message could not be added!");
+                TempData["success1"] = "Username or password is incorrect!";
                 return View(userDto);
             }
             return View(userDto);
@@ -86,7 +86,7 @@ namespace ProductService.Controllers
                 
                 if(assignedRole.IsSuccess)
                 {
-                    TempData["success1"] = "Registration Successful";
+                    
                     return RedirectToAction(nameof(Login));
 
                 }
@@ -133,5 +133,37 @@ namespace ProductService.Controllers
             var principal = new ClaimsPrincipal(identity);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,principal);
         }
+
+        [Route("Auth/AccessDenied")]
+        public IActionResult AccessDenied(string returnUrl)
+        {
+            // Check if the ReturnUrl is empty or is pointing to the AccessDenied page itself
+            if (string.IsNullOrEmpty(returnUrl) || returnUrl == Url.Action("AccessDenied", "Auth"))
+            {
+                ViewData["ReturnUrl"] = Url.Action("Index", "Home");
+            }
+            else
+            {
+                // Redirect to ProductIndex if ReturnUrl contains 'Product'
+                if (returnUrl.Contains("Product"))
+                {
+                    ViewData["ReturnUrl"] = Url.Action("ProductIndex", "Product");
+                }
+                // Redirect to CouponIndex if ReturnUrl contains 'Coupon'
+                else if (returnUrl.Contains("Coupon"))
+                {
+                    ViewData["ReturnUrl"] = Url.Action("CouponIndex", "Coupon");
+                }
+                else
+                {
+                    // Default to the home page or any other safe page if no match is found
+                    ViewData["ReturnUrl"] = Url.Action("Index", "Home");
+                }
+            }
+
+            return View();
+        }
+
+
     }
 }

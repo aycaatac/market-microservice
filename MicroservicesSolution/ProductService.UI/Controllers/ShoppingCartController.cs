@@ -46,6 +46,10 @@ namespace ProductService.Controllers
                 }
                 return cart;
             }
+            else
+            {
+                TempData["carterror"] = response.Message;
+            }
             return cart;
         }
 
@@ -76,7 +80,10 @@ namespace ProductService.Controllers
                 {
                     return RedirectToAction(nameof(ShoppingCartIndex));
                 }
-
+                else
+                {
+                    TempData["carterror"] = resp.Message;
+                }
             }
 
             return View();
@@ -93,6 +100,10 @@ namespace ProductService.Controllers
                 if (response.IsSuccess == true) //questionable
                 {
                     return RedirectToAction(nameof(ShoppingCartIndex));
+                }
+                else
+                {
+                    TempData["carterror"] = response.Message;
                 }
             }
             return View();
@@ -111,6 +122,10 @@ namespace ProductService.Controllers
                 {
                     return RedirectToAction(nameof(ShoppingCartIndex));
                 }
+                else
+                {
+                    TempData["carterror"] = response.Message;
+                }
             }
             return View();
         }
@@ -128,8 +143,30 @@ namespace ProductService.Controllers
                 return RedirectToAction(nameof(ShoppingCartIndex));
             
             }
+            else
+            {
+                TempData["carterror"] = response.Message;
+            }
             return View();
         }
+
+        [HttpPost]        
+        public async Task<IActionResult> EmailCart()
+        {
+            if (ModelState.IsValid)
+            {
+                ShoppingCartDto cart = await LoadCartByUserIndex();
+                cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
+                ResponseDto? response = await cartService.SendEmail(cart);
+                if (response.IsSuccess)
+                {
+                    return RedirectToAction(nameof(ShoppingCartIndex));
+                }
+
+            }   
+            return View();
+        }
+
     }
 
 }
