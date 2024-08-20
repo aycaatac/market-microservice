@@ -582,3 +582,4 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthS
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\AuthService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\AuthService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\ref\AuthService.API.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\AuthService.API\obj\Debug\net8.0\AuthService.API.sourcelink.json

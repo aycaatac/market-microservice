@@ -10,3 +10,4 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Messa
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBusService\obj\Debug\net8.0\refint\MessageBusService.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBusService\obj\Debug\net8.0\MessageBusService.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBusService\obj\Debug\net8.0\ref\MessageBusService.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\MessageBusService\obj\Debug\net8.0\MessageBusService.sourcelink.json

@@ -582,3 +582,4 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Produ
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ref\ProductService.API.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.sourcelink.json

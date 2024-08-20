@@ -3,13 +3,8 @@
 <link rel="stylesheet" href="~/css/site.css" />
 
 <div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
-    @if (Model.CartHeader != null && Model.CartDetails?.Count() > 0)
+    @if (Model.CartHeader != null)
     {
-         <form method="post" asp-action="EmailCart">
-    <br />
-    <input asp-for="CartHeader.UserId" hidden />
-    <input asp-for="CartHeader.CartHeaderId" hidden />   
-      
         <div class="row">
             <div class="col-md-8 cart">
 
@@ -129,7 +124,7 @@
                                         <strong>@cart.Product.Name</strong>
                                         <span>@(cart.Product.Price.ToString("c")) x @cart.ProductCount</span>
                                     </div>
-                                </div>                                   
+                                </div>
                             }
 
                             @if (!string.IsNullOrEmpty(Model.CartHeader.CouponCode) && Model.CartHeader.CouponCode != "string")
@@ -150,26 +145,13 @@
 
                         <!-- Begin Email Cart Form -->
                         <form asp-action="EmailCart" method="post" style="width: 100%; margin-top: 10px;">
-                            <!-- Binding the ShoppingCartDto properties using asp-for -->
-                            <input asp-for="CartHeader.CartHeaderId" type="hidden" />
-                            <input asp-for="CartHeader.UserId" type="hidden" />
-                            <input asp-for="CartHeader.CouponCode" type="hidden" />
-                            <input asp-for="CartHeader.CartTotal" type="hidden" />
-                            <input asp-for="CartHeader.Discount" type="hidden" />
                             
-                            @if (Model.CartDetails == null)
-                            {
-                            Model.CartDetails = new List<CartDetailsDto>
-                                ();
-                                }
 
-                               
-
+                           
 
                             <button type="submit" class="btn btn-primary" style="width: 100%; background-color: white; color: black;">EMAIL CART</button>
                         </form>
                         <!-- End Email Cart Form -->
-
                         @if (TempData["carterror"] != null)
                         {
                             <div id="notification" class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -181,7 +163,6 @@
                 </div>
             }
         </div>
-        </form>
     }
     else
     {

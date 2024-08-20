@@ -9,7 +9,7 @@
       "ShoppingCartService.API/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
-          "MessageBusService": "1.0.0",
+          "MessageBus": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.7",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.AspNetCore.OpenApi": "8.0.7",
@@ -1062,13 +1062,13 @@
           }
         }
       },
-      "MessageBusService/1.0.0": {
+      "MessageBus/1.0.0": {
         "dependencies": {
           "Azure.Messaging.ServiceBus": "7.18.1",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "MessageBusService.dll": {}
+          "MessageBus.dll": {}
         }
       }
     }
@@ -1716,7 +1716,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "MessageBusService/1.0.0": {
+    "MessageBus/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

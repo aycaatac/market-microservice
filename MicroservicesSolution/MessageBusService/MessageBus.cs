@@ -10,7 +10,7 @@ namespace MessageBusService
 {
     public class MessageBus : IMessageBus
     {
-        private string connectionString = "Endpoint=sb://ayca-market-microservice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SmX7+b5LwEDdQzuEi0Ea8KQNO0+rkVO2s+ASbEa+Jsg=";
+        private string connectionString = "Endpoint=sb://ayca-market-yeni.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=vQPKAC9YJa6eolQHCssDQuEHjL1us7HhI+ASbAkvQtU=";
         
         public async Task PublishMessage(object message, string queue_name)
         {

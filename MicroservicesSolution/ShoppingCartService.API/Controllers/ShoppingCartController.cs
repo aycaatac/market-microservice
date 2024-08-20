@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
 using Azure;
-using MessageBusService;
+using MessageBus;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using ShoppingCartService.API.Data;
 using ShoppingCartService.API.Models.Domain;
@@ -22,19 +23,21 @@ namespace ShoppingCartService.API.Controllers
         private  IMapper mapper;
         private  IProductService productService;
         private  ICouponService couponService;
-        private readonly IMessageBus messageBus;
+      
         private readonly IConfiguration configuration;
+        private readonly IMessageBus messageBus;
 
         public ShoppingCartController(AppShoppingCartDbContext appShoppingCartDbContext,
             IMapper mapper, IProductService productService, ICouponService couponService,
-            IMessageBus messageBus, IConfiguration configuration)
+            IConfiguration configuration, IMessageBus messageBus)
         {
             this.dbContext = appShoppingCartDbContext;
             this.mapper = mapper;
             this.productService = productService;
             this.couponService = couponService;
-            this.messageBus = messageBus;
+         
             this.configuration = configuration;
+            this.messageBus = messageBus;
         }
 
         [HttpGet("GetShoppingCart/{userId}")]
@@ -434,23 +437,22 @@ namespace ShoppingCartService.API.Controllers
         [HttpPost("EmailCartRequest")]
         public async Task<object> EmailCartRequest([FromBody] ShoppingCartDto cartDto)
         {
-            ResponseDto resp = new();
+            ResponseDto _response = new();
             try
             {
-                await messageBus.PublishMessage(cartDto, configuration.GetValue<string>("TopicAndQueueNames:EmailQueue"));
-
-                resp.Result = true;
-                resp.IsSuccess = true;
-            }catch(Exception ex)
-            {
-                resp.IsSuccess = false;
-                resp.Message = ex.ToString();
+                await messageBus.publishMessage(cartDto, configuration.GetValue<string>("TopicAndQueueNames:AycaMarketEmailQueue"));
+                _response.IsSuccess = true;
             }
-
-            return resp;
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.ToString();
+            }
+            return _response;
         }
-       
-       
+
+
+
     }
 
 }

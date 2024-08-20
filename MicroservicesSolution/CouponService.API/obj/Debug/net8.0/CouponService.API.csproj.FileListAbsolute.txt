@@ -272,3 +272,4 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Coupo
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\CouponService.API\bin\Debug\net8.0\CouponService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\CouponService.API\obj\Debug\net8.0\CouponService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\CouponService.API\obj\Debug\net8.0\ref\CouponService.API.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\CouponService.API\obj\Debug\net8.0\CouponService.API.sourcelink.json

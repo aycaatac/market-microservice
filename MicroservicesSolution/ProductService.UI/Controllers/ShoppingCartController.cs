@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProductService.Models;
+using ProductService.Service;
 using ProductService.Service.IFolder;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -150,20 +151,17 @@ namespace ProductService.Controllers
             return View();
         }
 
-        [HttpPost]        
+        [HttpPost("EmailCart")]
         public async Task<IActionResult> EmailCart()
         {
-            if (ModelState.IsValid)
+            ShoppingCartDto cart = await LoadCartByUserIndex();
+            cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
+            ResponseDto? response = await cartService.SendEmail(cart);
+            if (response.IsSuccess)
             {
-                ShoppingCartDto cart = await LoadCartByUserIndex();
-                cart.CartHeader.Email = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Email)?.FirstOrDefault()?.Value;
-                ResponseDto? response = await cartService.SendEmail(cart);
-                if (response.IsSuccess)
-                {
-                    return RedirectToAction(nameof(ShoppingCartIndex));
-                }
-
-            }   
+                TempData["success"] = "Email will be processed and sent shortly.";
+                return RedirectToAction(nameof(ShoppingCartIndex));
+            }
             return View();
         }
 
