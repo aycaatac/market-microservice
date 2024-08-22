@@ -83,6 +83,7 @@ footer {
     background-color: #3e8e41;
 }
 
+
 /* Styles for the card header */
 .card-header {
     border-radius: 10px; /* Rounded corners */
@@ -104,3 +105,5 @@ footer {
     z-index: 1050;
     min-width: 300px;
 }
+
+

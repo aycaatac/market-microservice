@@ -11,11 +11,13 @@ namespace ProductService.Service
     {
         
         private readonly IHttpClientFactory clientFactory;
+		private readonly ITokenProvider tokenProvider;
 
-        public BaseService(IHttpClientFactory clientFactory)
+		public BaseService(IHttpClientFactory clientFactory, ITokenProvider tokenProvider)
         {
             this.clientFactory = clientFactory;
-        }
+			this.tokenProvider = tokenProvider;
+		}
 
         //access token????????
         public async Task<ResponseDto?> SendAsync(RequestDto requestDto)
@@ -28,8 +30,11 @@ namespace ProductService.Service
 
                 //add token
                 message.RequestUri = new Uri(requestDto.Url);
-
-                if (requestDto.Data != null)
+				
+					var token = tokenProvider.GetToken();
+					message.Headers.Add("Authorization", $"Bearer {token}");
+				
+				if (requestDto.Data != null)
                 {
                     message.Content = new StringContent(JsonConvert.SerializeObject(requestDto.Data), Encoding.UTF8, "application/json");
                 }

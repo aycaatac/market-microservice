@@ -13,9 +13,9 @@ namespace OrderService.API.Models.DTO
         public DateTime CreationDate { get; set; }
         public int TotalItemCount { get; set; }
         public string? Name { get; set; }
-
+        public double Discount { get; set; }
         public string? PhoneNumber { get; set; }
-
+        public string? CouponCode { get; set; }
         public string? Email { get; set; }
 
         public string? Address { get; set; }

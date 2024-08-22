@@ -301,3 +301,4 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.pdb
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Stripe.net.dll

@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using ProductService.Models;
 using ProductService.Service;
 using ProductService.Service.IFolder;
+using ProductService.Utility;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
@@ -52,9 +53,38 @@ namespace ProductService.Controllers
             if(response != null && response.IsSuccess)
             {
 
+                var domain = Request.Scheme + "://" + Request.Host.Value + "/";
+
+                StripeRequestDto stripeRequestDto = new()
+                {
+                    ApprovedUrl = domain + "ShoppingCart/Confirmation?orderId=" + orderHeaderDto.OrderHeaderId,
+                    CancelUrl = domain + "ShoppingCart/CheckOutIndex",
+                    OrderHeader = orderHeaderDto
+                };
+
+                var stripeResponse = await orderService.CreateStripeSession(stripeRequestDto);
+                StripeRequestDto stripeResponseDto = JsonConvert.DeserializeObject<StripeRequestDto>(Convert.ToString(stripeResponse.Result));
+                Response.Headers.Add("Location", stripeResponseDto.StripeSessionUrl);
+                return new StatusCodeResult(303);
             }
 
             return View(cart);
+        }
+
+        public async Task<IActionResult> Confirmation(int orderId)
+        {
+            ResponseDto? response = await orderService.ValidateStripeSession(orderId);
+            if (response.IsSuccess)
+            {
+                OrderHeaderDto orderHeader = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
+                if(orderHeader.Status == SD.Status_Approved)
+                {
+                    return View(orderId);
+                }
+
+            }
+            //display the error if it is not approved mentioned in section 13 course 137
+            return View(orderId);
         }
 
 

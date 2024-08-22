@@ -1,0 +1,127 @@
+﻿@model OrderHeaderDto
+@using ProductService.Utility
+<form method="post">
+    <br />
+    <input asp-for="OrderHeaderId" hidden />
+
+    <div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start" style="padding-top: 5px;">
+                <h1 style="color:black; margin-left: 10px; margin-top: 5px;">Order Summary</h1>
+            </div>
+            <div class="col-md-4 text-center text-md-start" style="padding-top: 5px;">
+                <h1 style="color:black; text-align:left; margin-top: 10px; margin-bottom:10px; font-size: 1.2rem;">Order Status - @Model.Status</h1>
+            </div>
+            <div class="col-md-4 text-right mt-2 ms-auto">
+                <a asp-action="OrderIndex" class="btn btn-warning btn-sm" style="border-radius:12px; padding: 4px 8px; font-size: 0.8rem;">Back to Orders</a>
+            </div>
+        </div>
+  
+
+        <div class="card-body">
+            <div class="container rounded p-2" style="max-width: 100%; padding: 0 15px;">
+                <div class="row">
+                    <div class="col-12 col-lg-8 pb-4">
+                        <div class="row my-1">
+                            <div class="col-3">Name</div>
+                            <div class="col-9">
+                                <input asp-for="Name" readonly class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-3">Phone</div>
+                            <div class="col-9">
+                                <input asp-for="PhoneNumber" readonly class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-3">Email</div>
+                            <div class="col-9">
+                                <input asp-for="Email" readonly class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row my-1">
+                            <div class="col-3">Order Date</div>
+                            <div class="col-9">
+                                <input value="@Model.OrderTime.ToString()" readonly class="form-control" />
+                            </div>
+                        </div>
+                        @if (User.IsInRole(SD.RoleAdmin.ToLower()))
+                        {
+                            <div class="row my-1">
+                                <div class="col-3">Session ID</div>
+                                <div class="col-9">
+                                    <input asp-for="StripeSessionId" readonly class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row my-1">
+                                <div class="col-3">Payment Intent ID</div>
+                                <div class="col-9">
+                                    <input asp-for="PaymentIntentId" readonly class="form-control" />
+                                </div>
+                            </div>
+                        }
+                        <div class="row my-1">
+                            <div class="col-3">Order Status</div>
+                            <div class="col-9">
+                                <input asp-for="Status" readonly class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-4">
+                        <div class="card shadow-sm" style="background-color: #dedede; padding: 20px; border-radius: 20px; min-height: 250px; margin-bottom: 10px;">
+                            <div class="col" style="padding-left:0px; padding-top:10px; font-size:20px;">
+                                <strong>Summary</strong>
+                            </div>
+                            <hr style="border-color: rgba(0,0,0,.1); margin-top: 5px;margin-bottom:5px;">
+
+                            <div class="row">
+                                @foreach (var cart in Model.OrderDetails)
+                                {
+                                    <div class="col-12" style="padding-bottom: 5px;">
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <strong>@cart.productName</strong>
+                                            <span>@(cart.Price.ToString("c")) x @cart.ProductCount</span>
+                                        </div>
+                                    </div>
+                                }
+                                @if (!string.IsNullOrEmpty(Model.CouponCode) && Model.CouponCode != "string")
+                                {
+                                    <div class="col-12" style="padding-bottom: 5px;">
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <p style="opacity: 0.5; margin-bottom: 0;">Coupon: "@Model.CouponCode"</p>
+                                            <strong style="margin-bottom: 0;">- ₺@Model.Discount,00</strong>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); margin-top: -5px;">
+                                <div class="col"><strong>Cart Total:</strong></div>
+                                <div class="col" style="text-align: right;"><strong>@(Model.OrderTotal.ToString("c"))</strong></div>
+                            </div>
+                        </div>
+                        @if (User.IsInRole(SD.RoleAdmin.ToLower()))
+                        {
+                            @if (Model.Status == SD.Status_Approved)
+                            {
+                                <button asp-action="OrderReadyForPickup" asp-route-orderId="@Model.OrderHeaderId" type="submit" class="btn btn-success form-control my-1">Ready for Pickup</button>
+                            }
+                            @if (Model.Status == SD.Status_ReadyForPickup)
+                            {
+                                <button asp-action="CompleteOrder" asp-route-orderId="@Model.OrderHeaderId" type="submit" class="btn btn-success form-control my-1">Complete Order</button>
+                            }
+                            if (Model.Status == SD.Status_Approved || Model.Status == SD.Status_ReadyForPickup)
+                            {
+                                <button asp-action="CancelOrder" asp-route-orderId="@Model.OrderHeaderId" type="submit" class="btn btn-danger form-control my-1">Cancel Order</button>
+                            }
+                            
+                        }
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</form>
+

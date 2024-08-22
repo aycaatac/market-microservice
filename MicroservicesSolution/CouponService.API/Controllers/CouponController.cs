@@ -117,6 +117,18 @@ namespace CouponService.API.Controllers
                 dbContext.Coupons.Add(couponDomainModel);
                 dbContext.SaveChanges();
 
+                var options = new Stripe.CouponCreateOptions
+                {
+                    AmountOff = (long)(inputCoupon.DiscountAmount * 100),
+                    Name = inputCoupon.CouponCode,
+                    Currency = "usd",
+                    Id = inputCoupon.CouponCode,
+                };
+                var service = new Stripe.CouponService();
+                service.Create(options);
+
+
+
                 var returnDto = mapper.Map<ReturnCouponDto>(couponDomainModel);
                 resp.Result = returnDto;
                 resp.IsSuccess = true;
@@ -180,7 +192,10 @@ namespace CouponService.API.Controllers
                 else
                 {
                     dbContext.Coupons.Remove(coupon);
-                    dbContext.SaveChanges();                   
+                    dbContext.SaveChanges();
+                    var service = new Stripe.CouponService();
+                    service.Delete(coupon.CouponCode);
+
                     resp.Result = mapper.Map<ReturnCouponDto>(coupon);
                     resp.IsSuccess = true;
                     return resp;

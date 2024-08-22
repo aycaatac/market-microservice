@@ -18,6 +18,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.7",
           "Newtonsoft.Json": "13.0.3",
           "RabbitMQ.Client": "6.8.1",
+          "Stripe.net": "45.8.0",
           "Swashbuckle.AspNetCore": "6.7.0"
         },
         "runtime": {
@@ -765,6 +766,18 @@
           }
         }
       },
+      "Stripe.net/45.8.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "45.8.0.0",
+            "fileVersion": "45.8.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.7.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1456,6 +1469,13 @@
       "sha512": "sha512-jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
       "path": "rabbitmq.client/6.8.1",
       "hashPath": "rabbitmq.client.6.8.1.nupkg.sha512"
+    },
+    "Stripe.net/45.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MX4tByNC9ElsYV/4Fbp8iQ3pFabBHMlN15kZqg2c2zbWIKhMjijVEQbm31BG27HD0aIMwk/RTA//NVcgK3I8kQ==",
+      "path": "stripe.net/45.8.0",
+      "hashPath": "stripe.net.45.8.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.7.0": {
       "type": "package",

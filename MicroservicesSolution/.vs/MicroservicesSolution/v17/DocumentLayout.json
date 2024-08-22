@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\orderservice.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|solutionrelative:orderservice.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\order\\orderindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\order\\orderindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\orderservice.api\\migrations\\20240820192722_orderupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|solutionrelative:orderservice.api\\migrations\\20240820192722_orderupdate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\orderservice.api\\models\\domain\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|solutionrelative:orderservice.api\\models\\domain\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\models\\orderheaderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\models\\orderheaderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\models\\cartheaderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\models\\cartheaderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06BAEF7A-9C46-4A6B-9AC8-364189A717FC}|AuthService.API\\AuthService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\authservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{06BAEF7A-9C46-4A6B-9AC8-364189A717FC}|AuthService.API\\AuthService.API.csproj|solutionrelative:authservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\orderservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|solutionrelative:orderservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\orderservice.api\\orderservice.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|solutionrelative:orderservice.api\\orderservice.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\orderservice.api\\migrations\\20240820192530_orderupdate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06BD2DB-BB81-48BD-8988-1DC506CA95EB}|OrderService.API\\OrderService.API.csproj|solutionrelative:orderservice.api\\migrations\\20240820192530_orderupdate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 518,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,138 +34,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "order.js",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\js\\order.js",
+              "RelativeDocumentMoniker": "ProductService.UI\\wwwroot\\js\\order.js",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\js\\order.js",
+              "RelativeToolTip": "ProductService.UI\\wwwroot\\js\\order.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-22T11:14:21.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OrderHeader.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Models\\Domain\\OrderHeader.cs",
-              "RelativeDocumentMoniker": "OrderService.API\\Models\\Domain\\OrderHeader.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Models\\Domain\\OrderHeader.cs",
-              "RelativeToolTip": "OrderService.API\\Models\\Domain\\OrderHeader.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:27:10.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20240820192530_orderUpdate1.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Migrations\\20240820192530_orderUpdate1.cs",
-              "RelativeDocumentMoniker": "OrderService.API\\Migrations\\20240820192530_orderUpdate1.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Migrations\\20240820192530_orderUpdate1.cs",
-              "RelativeToolTip": "OrderService.API\\Migrations\\20240820192530_orderUpdate1.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:25:30.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "ProductService.UI\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAzwDMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:09:40.273Z",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ProductService.UI\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ProductService.UI\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-22T11:10:20.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrderIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
+              "RelativeDocumentMoniker": "ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
+              "RelativeToolTip": "ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T11:01:13.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "OrderService.API\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "OrderService.API\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAACMAAAApAAAA",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "ProductService.UI\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "ProductService.UI\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAowFUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:29:56.395Z",
+              "WhenOpened": "2024-08-22T10:58:35.181Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderHeaderDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Models\\OrderHeaderDto.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Models\\OrderHeaderDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Models\\OrderHeaderDto.cs",
-              "RelativeToolTip": "ProductService.UI\\Models\\OrderHeaderDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:22:37.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CartHeaderDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Models\\CartHeaderDto.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Models\\CartHeaderDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Models\\CartHeaderDto.cs",
-              "RelativeToolTip": "ProductService.UI\\Models\\CartHeaderDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:22:32.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\AuthService.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "AuthService.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\AuthService.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "AuthService.API\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-20T19:21:18.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\appsettings.json",
-              "RelativeDocumentMoniker": "ProductService.UI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\appsettings.json",
-              "RelativeToolTip": "ProductService.UI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-20T19:21:03.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderService.API.http",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\OrderService.API.http",
-              "RelativeDocumentMoniker": "OrderService.API\\OrderService.API.http",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\OrderService.API.http",
-              "RelativeToolTip": "OrderService.API\\OrderService.API.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-20T19:20:47.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20240820192722_orderUpdate2.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Migrations\\20240820192722_orderUpdate2.cs",
-              "RelativeDocumentMoniker": "OrderService.API\\Migrations\\20240820192722_orderUpdate2.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Migrations\\20240820192722_orderUpdate2.cs",
-              "RelativeToolTip": "OrderService.API\\Migrations\\20240820192722_orderUpdate2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T19:27:22.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "OrderService.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\OrderService.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "OrderService.API\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-20T19:20:27.944Z"
             }
           ]
         }

@@ -1,4 +1,5 @@
 ﻿using MailService.API.Data;
+using MailService.API.Message;
 using MailService.API.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
@@ -82,6 +83,12 @@ namespace MailService.API.Services
                 Console.WriteLine(ex.Message.ToString());
                 return false;
             }
+        }
+
+        public async Task LogOrderPlaced(RewardMessage rewardMessage)
+        {
+            string message = "New Order Placed. <br/> Order ID : " + rewardMessage.OrderId;
+            await LogAndEmail(message, "giveninmailservice@gmail.com");
         }
     }
 }

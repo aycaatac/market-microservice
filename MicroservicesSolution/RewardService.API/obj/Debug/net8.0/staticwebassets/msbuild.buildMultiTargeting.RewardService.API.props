@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RewardService.API.props" />
+</Project>

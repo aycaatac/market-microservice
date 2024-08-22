@@ -1,0 +1,17 @@
+﻿@model int
+
+<div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
+    <div class="row align-items-center">
+        <div class="text-center">
+            <h1 class="pt-4" style="color:black;">Your order has been confirmed! Thanks for shopping with us!</h1>
+            <img src="/images/alpaca-image.jpg" width="30%" style="margin-top:100px"/>
+            <p class="pb-3" style="color:black;font-size: 1.25rem;margin-top:100px;">We are preparing your order, your package is estimated to be ready for pick up in 30 minutes! You can track the status of your order with the given order ID.</p>
+            <h4 class="pb-3" style="color:black;">Order ID = @Model</h4>            
+        </div>
+    </div>
+    <div class="card-body p-4 text-center">
+        <a href="/Product/ProductCreate" class="btn btn-outline-primary" style="font-size: 1.5rem; padding: 10px 30px;">
+            Track Order
+        </a>
+    </div>
+</div>
