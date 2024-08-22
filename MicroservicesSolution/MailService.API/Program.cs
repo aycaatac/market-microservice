@@ -15,7 +15,7 @@ builder.Services.AddDbContext<AppMailDbContext>(option =>
 var optionBuilder = new DbContextOptionsBuilder<AppMailDbContext>();
 optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 builder.Services.AddSingleton(new MailServiceImp(optionBuilder.Options));
-
+builder.Services.AddTransient<IEmailSenderService, EmailSenderService>();
 
 
 

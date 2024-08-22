@@ -47,6 +47,7 @@ namespace ProductService.Controllers
             cart.CartHeader.Email = cartDto.CartHeader.Email;
             cart.CartHeader.Name = cartDto.CartHeader.Name;
             cart.CartHeader.Address = cartDto.CartHeader.Address;
+            
             var response = await orderService.CreateOrder(cart);
             OrderHeaderDto orderHeaderDto = JsonConvert.DeserializeObject<OrderHeaderDto>(Convert.ToString(response.Result));
 

@@ -50,7 +50,7 @@ namespace RewardService.API.Messaging
 
             try
             {
-                //TRY TO LOG MAIL
+             
                 await rewardService.UpdateRewards(objMessage);
                 await args.CompleteMessageAsync(args.Message);
             }

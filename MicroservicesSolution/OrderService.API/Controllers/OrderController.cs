@@ -174,18 +174,11 @@ namespace OrderService.API.Controllers
                     SuccessUrl = stripeRequestDto.ApprovedUrl,
                     CancelUrl = stripeRequestDto.CancelUrl,
                     LineItems = new List<SessionLineItemOptions>(),
-                    Mode = "payment",
-                    Discounts = new List<SessionDiscountOptions>()
+                    Mode = "payment"
+                   // Discounts = new List<SessionDiscountOptions>()
                 };
 
-                var DiscountsObj = new List<SessionDiscountOptions>()
-                {
-                    new SessionDiscountOptions
-                    {
-                        Coupon=stripeRequestDto.OrderHeader.CouponCode
-                    }
-                };
-
+               
                 foreach (var item in stripeRequestDto.OrderHeader.OrderDetails)
                 {
                     var sessionLineItem = new SessionLineItemOptions
@@ -204,9 +197,15 @@ namespace OrderService.API.Controllers
 
                     options.LineItems.Add(sessionLineItem);
                 }
-                if (stripeRequestDto.OrderHeader.Discount > 0)
+                if (stripeRequestDto.OrderHeader.Discount > 0 && !string.IsNullOrEmpty(stripeRequestDto.OrderHeader.CouponCode))
                 {
-                    options.Discounts = DiscountsObj;
+                    options.Discounts = new List<SessionDiscountOptions>
+            {
+                new SessionDiscountOptions
+                {
+                    Coupon = stripeRequestDto.OrderHeader.CouponCode
+                }
+            };
                 }
                 var service = new SessionService();
                 Session session = service.Create(options);
@@ -237,7 +236,12 @@ namespace OrderService.API.Controllers
                 OrderHeader orderHeader = dbContext.OrderHeaders.First(u => u.OrderHeaderId == orderHeaderId);
                 var service = new SessionService();
                 Session session = service.Get(orderHeader.StripeSessionId);
-
+                string emailMessage = "Your order details are below:\n";
+                IEnumerable<OrderDetails> orderDetails = dbContext.OrderDetails.Where(x => x.OrderHeaderId == orderHeaderId);
+                foreach (var item in orderDetails)
+                {
+                    emailMessage += "- " + item.productName + " (x" + item.ProductCount + ")\n";
+                }
                 var paymentIntentService = new PaymentIntentService();
                 PaymentIntent paymentIntent = paymentIntentService.Get(session.PaymentIntentId);
 
@@ -250,7 +254,11 @@ namespace OrderService.API.Controllers
                     {
                         OrderId = orderHeader.OrderHeaderId,
                         RewardsActivity = Convert.ToInt32(orderHeader.OrderTotal / 2), //will this cause problems??
-                        UserId = orderHeader.UserId
+                        UserId = orderHeader.UserId,
+                        Email = orderHeader.Email,
+                        OrderTotal = orderHeader.OrderTotal,
+                        OrderTime = orderHeader.OrderTime,
+                        EmailMessage = emailMessage
                     };
 
                     string topicName = configuration.GetValue<string>("TopicAndQueueNames:OrderCreatedTopic");

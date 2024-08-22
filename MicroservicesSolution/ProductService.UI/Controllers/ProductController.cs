@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProductService.Models;
+using ProductService.Service;
 using ProductService.Service.IFolder;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
@@ -13,15 +14,19 @@ namespace ProductService.Controllers
     {
         private readonly IProductService productService;
         private readonly ICartService cartService;
+        private readonly IEmailSenderService emailSenderService;
 
-        public ProductController(IProductService productService, ICartService cartService)
+        public ProductController(IProductService productService, ICartService cartService,
+            IEmailSenderService emailSenderService)
         {
             this.productService = productService;
             this.cartService = cartService;
+            this.emailSenderService = emailSenderService;
         }
 
         public async Task<IActionResult> ProductIndex()
         {
+           
             List<ProductDto> products = new();
             
             ResponseDto response = await productService.GetAllPorductsAsync();

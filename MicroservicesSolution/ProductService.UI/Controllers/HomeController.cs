@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductService.Models;
+using ProductService.Service.IFolder;
 using System.Diagnostics;
 
 namespace ProductService.UI.Controllers
@@ -7,14 +8,18 @@ namespace ProductService.UI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IEmailSenderService emailSenderService;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+         
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            
+
             return View();
         }
 
