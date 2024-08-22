@@ -17,6 +17,8 @@ builder.Services.AddHttpClient<IAuthService, AuthService>();
 builder.Services.AddHttpClient<ICouponService, CouponService>();
 builder.Services.AddHttpClient<ICartService, CartService>();
 builder.Services.AddHttpClient<IOrderService, OrderService>();
+builder.Services.AddHttpClient<IRewardService, RewardService>();
+builder.Services.AddScoped<IRewardService, RewardService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
@@ -38,6 +40,7 @@ SD.AuthApiBase = builder.Configuration["ServiceUrls:AuthAPI"];
 SD.CouponApiBase = builder.Configuration["ServiceUrls:CouponAPI"];
 SD.OrderApiBase = builder.Configuration["ServiceUrls:OrderAPI"];
 SD.ShoppingCartApiBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
+SD.RewardApiBase = builder.Configuration["ServiceUrls:RewardAPI"];
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.AccessDeniedPath = "/Auth/AccessDenied"; // Path to your Access Denied page

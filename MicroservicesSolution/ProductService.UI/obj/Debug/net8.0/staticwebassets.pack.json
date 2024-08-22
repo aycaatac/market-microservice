@@ -193,6 +193,14 @@
       "PackagePath": "staticwebassets\\images\\alpaca-image.jpg"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\images\\smiling-star-left.png",
+      "PackagePath": "staticwebassets\\images\\smiling-star-left.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\images\\smiling-star-right.png",
+      "PackagePath": "staticwebassets\\images\\smiling-star-right.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\js\\order.js",
       "PackagePath": "staticwebassets\\js\\order.js"
     },

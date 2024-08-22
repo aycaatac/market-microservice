@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\reward\\rewardindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\reward\\rewardindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\order\\orderindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\order\\orderindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\models\\rewarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\models\\rewarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\wwwroot\\js\\order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\shoppingcart\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\shoppingcart\\confirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\product\\productindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\product\\productindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\controllers\\rewardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\controllers\\rewardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 518,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "order.js",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\js\\order.js",
-              "RelativeDocumentMoniker": "ProductService.UI\\wwwroot\\js\\order.js",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\js\\order.js",
-              "RelativeToolTip": "ProductService.UI\\wwwroot\\js\\order.js",
+              "DocumentIndex": 1,
+              "Title": "RewardDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Models\\RewardDto.cs",
+              "RelativeDocumentMoniker": "RewardService.API\\Models\\RewardDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Models\\RewardDto.cs",
+              "RelativeToolTip": "RewardService.API\\Models\\RewardDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-22T11:14:21.734Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T12:13:11.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RewardController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\RewardController.cs",
+              "RelativeDocumentMoniker": "ProductService.UI\\Controllers\\RewardController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\RewardController.cs",
+              "RelativeToolTip": "ProductService.UI\\Controllers\\RewardController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAQwBQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T12:02:21.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Confirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\ShoppingCart\\Confirmation.cshtml",
+              "RelativeDocumentMoniker": "ProductService.UI\\Views\\ShoppingCart\\Confirmation.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\ShoppingCart\\Confirmation.cshtml",
+              "RelativeToolTip": "ProductService.UI\\Views\\ShoppingCart\\Confirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T11:57:51.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "ProductService.UI\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "ProductService.UI\\wwwroot\\css\\site.css",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAmwFQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-22T11:10:20.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
-              "RelativeDocumentMoniker": "ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
-              "RelativeToolTip": "ProductService.UI\\Views\\Order\\OrderIndex.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Title": "ProductIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Product\\ProductIndex.cshtml",
+              "RelativeDocumentMoniker": "ProductService.UI\\Views\\Product\\ProductIndex.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Product\\ProductIndex.cshtml",
+              "RelativeToolTip": "ProductService.UI\\Views\\Product\\ProductIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-22T11:01:13.357Z",
+              "WhenOpened": "2024-08-22T11:57:15.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "ProductService.UI\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAowFUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T10:58:35.181Z",
+              "Title": "RewardIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "RelativeDocumentMoniker": "ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "RelativeToolTip": "ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAYwCUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T11:54:22.211Z",
               "EditorCaption": ""
             }
           ]

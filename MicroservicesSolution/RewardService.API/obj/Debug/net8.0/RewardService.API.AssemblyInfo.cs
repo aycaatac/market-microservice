@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RewardService.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3436449ebc65bceb42188d40519390e729251928")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2658b191b8460d42cfe171bc57d269588c01e000")]
 [assembly: System.Reflection.AssemblyProductAttribute("RewardService.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RewardService.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

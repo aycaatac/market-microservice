@@ -1,9 +1,10 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using RewardService.API.Data;
 using RewardService.API.Extension;
 using RewardService.API.Messaging;
 using RewardService.API.Services;
-
+using RewardService.API.Mappings;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppRewardDbContext>(option =>
@@ -11,6 +12,9 @@ builder.Services.AddDbContext<AppRewardDbContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+builder.Services.AddSingleton(mapper);
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var optionBuilder = new DbContextOptionsBuilder<AppRewardDbContext>();
 optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
