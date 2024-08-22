@@ -1,4 +1,5 @@
 ﻿@using ProductService.Models
+@using ProductService.Utility
 @model IEnumerable<CouponDto>
 <link rel="stylesheet" href="~/css/site.css" />
 
@@ -9,30 +10,33 @@
         </div>
        
     </div>
-    <div class="card-body p-4">
-        <div class="row pb-3">
-            <div class="col-12 text-end">
-                <a href="/Coupon/CouponCreate" class="btn btn-outline-primary me-2">
-                    <i class="bi bi-plus-square"></i> Create New Coupon
-                </a>
-                <a href="/Coupon/CouponUpdate" class="btn btn-outline-primary me-2">
-                    <i class="bi bi-pencil-square"></i> Edit a Coupon
-                </a>
-                <a href="/Coupon/CouponDelete" class="btn btn-outline-primary">
-                    <i class="bi bi-trash"></i> Delete a Coupon
-                </a>
-            </div>
-            @if (TempData["couponerror"] != null)
-            {
-                <div id="notification" class="alert alert-danger alert-dismissible fade show" role="alert">
-                    @TempData["couponerror"]
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    @if (User.IsInRole(SD.RoleAdmin.ToLower()))
+    {
+        <div class="card-body p-4">
+            <div class="row pb-3">
+                <div class="col-12 text-end">
+                    <a href="/Coupon/CouponCreate" class="btn btn-outline-primary me-2">
+                        <i class="bi bi-plus-square"></i> Create New Coupon
+                    </a>
+                    <a href="/Coupon/CouponUpdate" class="btn btn-outline-primary me-2">
+                        <i class="bi bi-pencil-square"></i> Edit a Coupon
+                    </a>
+                    <a href="/Coupon/CouponDelete" class="btn btn-outline-primary">
+                        <i class="bi bi-trash"></i> Delete a Coupon
+                    </a>
                 </div>
-            }
+                @if (TempData["couponerror"] != null)
+                {
+                    <div id="notification" class="alert alert-danger alert-dismissible fade show" role="alert">
+                        @TempData["couponerror"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+            </div>
         </div>
-    </div>
+    }
 
-    <div class="container">
+    <div class="container" style="margin-top:30px;">
         <div class="row">
             @foreach (var item in Model)
             {
@@ -49,7 +53,11 @@
                             </ul>
                             <form action="/Coupon/ApplyCouponToCart" method="post">
                                 <input type="hidden" name="couponCode" value="@item.CouponCode" />
-                                <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Add Coupon</button>
+                                @if (!User.IsInRole(SD.RoleAdmin.ToLower()))
+                                {
+                                    <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Add Coupon</button>
+                                }
+                               
                             </form>
                             
                         </div>
