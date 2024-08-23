@@ -181,6 +181,18 @@
       "PackagePath": "staticwebassets\\ProductService.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\ayca-market-logo-medium.ico",
+      "PackagePath": "staticwebassets\\ayca-market-logo-medium.ico"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\ayca-market-logo-medium2.ico",
+      "PackagePath": "staticwebassets\\ayca-market-logo-medium2.ico"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\ayca-market-logo.ico",
+      "PackagePath": "staticwebassets\\ayca-market-logo.ico"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -191,6 +203,10 @@
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\images\\alpaca-image.jpg",
       "PackagePath": "staticwebassets\\images\\alpaca-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\images\\ayca-market-logo.png",
+      "PackagePath": "staticwebassets\\images\\ayca-market-logo.png"
     },
     {
       "Id": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\wwwroot\\images\\smiling-star-left.png",
