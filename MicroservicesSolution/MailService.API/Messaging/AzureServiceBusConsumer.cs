@@ -114,7 +114,7 @@ namespace MailService.API.Messaging
 
             try
             {
-                string messageBody = "Your cart total is currently " + objMessage.CartHeader.CartTotal + " liras! Your order consists of:\n";
+                string messageBody = "Your cart total is currently " + objMessage.CartHeader.CartTotal + " liras! Your cart consists of:\n";
                 foreach(var product in objMessage.CartDetails)
                 {
                     messageBody += "-" + product.Product.Name + " (x" + product.ProductCount + ")\n"; 

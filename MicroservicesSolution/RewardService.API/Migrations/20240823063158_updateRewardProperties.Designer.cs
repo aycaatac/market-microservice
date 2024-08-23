@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RewardService.API.Data;
 
@@ -11,9 +12,11 @@ using RewardService.API.Data;
 namespace RewardService.API.Migrations
 {
     [DbContext(typeof(AppRewardDbContext))]
-    partial class AppRewardDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240823063158_updateRewardProperties")]
+    partial class updateRewardProperties
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
