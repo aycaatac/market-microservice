@@ -67,7 +67,13 @@ namespace MailService.API.Messaging
             var body = Encoding.UTF8.GetString(message.Body);            
             ShoppingCartDto cart = JsonConvert.DeserializeObject<ShoppingCartDto>(body);
             RewardMessage objMessage = JsonConvert.DeserializeObject<RewardMessage>(body);
-            string messageBody = "Your order with order id " + objMessage.OrderId + " was placed at " + objMessage.OrderTime.ToString() + ". Your order total is " + objMessage.OrderTotal + " and you have gained " + objMessage.RewardsActivity + " points from this order!\n";
+            string formattedDate = objMessage.OrderTime.HasValue
+    ? objMessage.OrderTime.Value.ToString("MMMM dd, yyyy")
+    : "No Date Provided";
+            string formattedTotal = objMessage.OrderTotal?.ToString("F2") ?? "0.00";
+
+           
+            string messageBody = "Your order with order id " + objMessage.OrderId + " was placed on " + formattedDate + ". Your order total is ₺" + formattedTotal + " and you have gained " + objMessage.RewardsActivity + " points from this order!\n\n";
             messageBody += objMessage.EmailMessage;
             try
             {
@@ -114,7 +120,7 @@ namespace MailService.API.Messaging
 
             try
             {
-                string messageBody = "Your cart total is currently " + objMessage.CartHeader.CartTotal + " liras! Your cart consists of:\n";
+                string messageBody = "Your cart total is currently " + objMessage.CartHeader.CartTotal + " liras!\n\n Your cart consists of:\n";
                 foreach(var product in objMessage.CartDetails)
                 {
                     messageBody += "-" + product.Product.Name + " (x" + product.ProductCount + ")\n"; 
