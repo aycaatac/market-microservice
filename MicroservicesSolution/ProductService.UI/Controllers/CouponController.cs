@@ -12,11 +12,13 @@ namespace ProductService.Controllers
     {
         private readonly ICouponService couponService;
         private readonly ICartService cartService;
+        private readonly IRewardService rewardService;
 
-        public CouponController(ICouponService couponService, ICartService cartService)
+        public CouponController(ICouponService couponService, ICartService cartService, IRewardService rewardService)
         {
             this.couponService = couponService;
             this.cartService = cartService;
+            this.rewardService = rewardService;
         }
 
         public async Task<IActionResult> CouponIndex()
@@ -133,6 +135,17 @@ namespace ProductService.Controllers
                 }
             }
             return View(model);
+        }
+
+
+        public async Task CreateRewardCoupon(string CouponCode)
+        {
+            CouponDto model = new();
+            model.CouponCode = CouponCode;
+            model.DiscountAmount = int.Parse(CouponCode.Substring(0, 2));
+            model.MinAmount = model.DiscountAmount * 3;
+            
+            await CouponCreate(model);
         }
     }
 }

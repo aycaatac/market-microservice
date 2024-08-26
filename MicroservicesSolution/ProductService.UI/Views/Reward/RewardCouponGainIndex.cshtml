@@ -1,0 +1,53 @@
+﻿@model int
+
+<div class="card-body p-4">
+    @if (Model < 2500)
+    {
+        <div class="text-center" style="margin-top:40px;">
+            <h1 class="display-4">You have @Model points! Would you like to gain a "30OFF" coupon for 1000 points?</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-12 text-end">
+                <a asp-controller="Coupon" asp-action="CreateRewardCoupon" asp-route-couponCode="30OFF" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-pencil-square"></i> Yes!
+                </a>
+                <a href="/Reward/RewardIndexOrig" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-plus-square"></i> No, keep collecting points!
+                </a>
+            </div>
+        </div>
+    }
+    else if (Model > 2500 && Model < 4000)
+    {
+        <div class="text-center" style="margin-top:40px;">
+            <h1 class="display-4">You have @Model points! Would you like to gain a "60OFF" coupon for 3000 points?</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-12 text-end">
+                <a asp-controller="Coupon" asp-action="CreateRewardCoupon" asp-route-couponCode="60OFF" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-pencil-square"></i> Yes!
+                </a>
+                <a href="/Reward/RewardIndexOrig" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-plus-square"></i> No, keep collecting points!
+                </a>
+            </div>
+        </div>
+    }
+    else if (Model > 4000 && Model < 7000)
+    {
+        <div class="text-center" style="margin-top:40px;">
+            <h1 class="display-4">You have @Model points! Would you like to gain a "100OFF" coupon for 5000 points?</h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-12 text-end">
+                <a asp-controller="Coupon" asp-action="CreateRewardCoupon" asp-route-couponCode="100OFF" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-pencil-square"></i> Yes!
+                </a>
+                <a href="/Reward/RewardIndexOrig" class="btn btn-outline-primary me-2">
+                    <i class="bi bi-plus-square"></i> No, keep collecting points!
+                </a>
+            </div>
+        </div>
+    }
+</div>
+

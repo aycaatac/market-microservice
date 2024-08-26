@@ -1,0 +1,47 @@
+﻿@model IEnumerable<RewardDto>
+<link rel="stylesheet" href="~/css/site.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div class="card shadow border-0 mt-4" style="border-radius: 20px; padding: 10px;">
+    <div class="row align-items-center">
+        <div class="col text-center text-md-start">
+            <h1 style="color:black; margin-top: 5px; margin-left:20px;">My Rewards</h1>
+        </div>
+        <div class="col-auto text-center text-md-start" style="padding-left: 15px; padding-top: 5px;">
+            <img src="/images/smiling-star-left.png" width="30%" style="margin-right: 10px;" />
+        </div>
+        <div class="col-auto text-center text-md-start">
+            <img src="/images/smiling-star-right.png" width="30%" style="margin-left: 10px;" />
+        </div>
+        <div class="col text-center text-md-start">
+            @{
+                var total = 0;
+                foreach (var reward in Model)
+                {
+                    total += reward.RewardsActivity;
+                }
+            }
+            <h1 style="color:black; margin-top: 5px; margin-left:100px;">Total Points: @total </h1>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Order Id</th>
+                <th scope="col" class="text-center">Date</th>
+                <th scope="col" class="text-center">Points gained</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var reward in Model)
+            {
+                <tr>
+                    <th scope="row" class="text-center">@reward.Id</th>
+                    <td class="text-center">@reward.OrderId</td>
+                    <td class="text-center">@reward.RewardsDate.ToShortDateString()</td>
+                    <td class="text-center">@reward.RewardsActivity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

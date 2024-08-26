@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RewardService.API.Data;
+using RewardService.API.Message;
 using RewardService.API.Models;
+using RewardService.API.Services;
 
 namespace RewardService.API.Controllers
 {
@@ -12,12 +14,14 @@ namespace RewardService.API.Controllers
 	{
 		private readonly IMapper mapper;
 		private readonly AppRewardDbContext dbContext;
+  
 
-		public RewardController(IMapper mapper, AppRewardDbContext dbContext)
+        public RewardController(IMapper mapper, AppRewardDbContext dbContext)
         {
 			this.mapper = mapper;
 			this.dbContext = dbContext;
-		}
+        
+        }
 
 		[HttpGet("GetRewardsByUserId/{userId}")]
 		public ResponseDto GetRewardsByUserId(string userId)
@@ -37,5 +41,8 @@ namespace RewardService.API.Controllers
 
 			return resp;
 		}
+
+
+		
     }
 }

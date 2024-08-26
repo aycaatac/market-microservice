@@ -568,6 +568,7 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Produ
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.sourcelink.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\staticwebassets\msbuild.ProductService.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -582,4 +583,3 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Produ
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ref\ProductService.API.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ProductService.API\obj\Debug\net8.0\ProductService.API.sourcelink.json

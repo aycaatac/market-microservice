@@ -31,6 +31,7 @@ namespace RewardService.API.Services
                 await using var dbContext = new AppRewardDbContext(dbOptions);
                 await dbContext.Rewards.AddAsync(rewards);
                 await dbContext.SaveChangesAsync();
+               
                 return true;
             }
             catch (Exception ex)
@@ -38,5 +39,7 @@ namespace RewardService.API.Services
                 return false; 
             }          
         }
+
+      
     }
 }

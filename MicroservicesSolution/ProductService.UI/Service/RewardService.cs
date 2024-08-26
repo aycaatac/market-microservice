@@ -22,6 +22,6 @@ namespace ProductService.Service
 			});
 		}
 
-		
-	}
+
+    }
 }

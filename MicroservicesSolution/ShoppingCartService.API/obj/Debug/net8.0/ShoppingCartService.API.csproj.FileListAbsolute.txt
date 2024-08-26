@@ -155,13 +155,16 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Shopp
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\ShoppingCartService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -194,6 +197,7 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Shopp
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -273,6 +277,8 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Shopp
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\MessageBus.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.AssemblyInfoInputs.cache
@@ -280,6 +286,7 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Shopp
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.sourcelink.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\staticwebassets\msbuild.ShoppingCartService.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -294,10 +301,3 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Shopp
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ref\ShoppingCartService.API.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\obj\Debug\net8.0\ShoppingCartService.API.sourcelink.json
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\System.ClientModel.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\MessageBus.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\ShoppingCartService.API\bin\Debug\net8.0\MessageBus.pdb

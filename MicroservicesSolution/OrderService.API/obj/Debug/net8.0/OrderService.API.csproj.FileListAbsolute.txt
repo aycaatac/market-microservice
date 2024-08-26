@@ -155,13 +155,16 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\OrderService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -191,9 +194,11 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Stripe.net.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -273,6 +278,8 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.dll
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.AssemblyInfoInputs.cache
@@ -280,6 +287,7 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.sourcelink.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\staticwebassets\msbuild.OrderService.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -294,11 +302,3 @@ C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\Order
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.pdb
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.genruntimeconfig.cache
 C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\ref\OrderService.API.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\obj\Debug\net8.0\OrderService.API.sourcelink.json
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Core.Amqp.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\System.ClientModel.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.dll
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\MessageBus.pdb
-C:\Users\Lenovo\Documents\GitHub\market-microservice\MicroservicesSolution\OrderService.API\bin\Debug\net8.0\Stripe.net.dll
