@@ -147,6 +147,19 @@ namespace ProductService.Controllers
             
             await CouponCreate(model);
         }
+
+        public async Task<IActionResult> RewardCoupons(double? userPoints)
+        {
+            List<RewardCouponDto> coupons = new();
+
+            ResponseDto response = await couponService.GetAllRewardCouponsAsync();
+
+            if (response != null && response.IsSuccess == true)
+            {
+                coupons = JsonConvert.DeserializeObject<List<RewardCouponDto>>(Convert.ToString(response.Result));
+            }
+            return View(coupons);
+        }
     }
 }
 

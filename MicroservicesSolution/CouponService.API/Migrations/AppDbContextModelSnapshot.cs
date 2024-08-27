@@ -42,6 +42,32 @@ namespace CouponService.API.Migrations
                     b.HasKey("CouponId");
 
                     b.ToTable("Coupons");
+                });
+
+            modelBuilder.Entity("CouponService.API.Models.Domain.RewardCoupon", b =>
+                {
+                    b.Property<int>("CouponId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CouponId"));
+
+                    b.Property<string>("CouponCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("DiscountAmount")
+                        .HasColumnType("float");
+
+                    b.Property<double>("MinAmount")
+                        .HasColumnType("float");
+
+                    b.Property<double>("RewardPointsNeeded")
+                        .HasColumnType("float");
+
+                    b.HasKey("CouponId");
+
+                    b.ToTable("RewardCoupons");
 
                     b.HasData(
                         new
@@ -49,14 +75,24 @@ namespace CouponService.API.Migrations
                             CouponId = 1,
                             CouponCode = "100FF",
                             DiscountAmount = 10.0,
-                            MinAmount = 20.0
+                            MinAmount = 20.0,
+                            RewardPointsNeeded = 1000.0
                         },
                         new
                         {
                             CouponId = 2,
                             CouponCode = "200FF",
                             DiscountAmount = 20.0,
-                            MinAmount = 40.0
+                            MinAmount = 40.0,
+                            RewardPointsNeeded = 2000.0
+                        },
+                        new
+                        {
+                            CouponId = 3,
+                            CouponCode = "300FF",
+                            DiscountAmount = 30.0,
+                            MinAmount = 180.0,
+                            RewardPointsNeeded = 3500.0
                         });
                 });
 #pragma warning restore 612, 618

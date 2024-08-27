@@ -12,6 +12,7 @@ namespace CouponService.API.Mappings
             {
                 config.CreateMap<CouponDto, Coupon>().ReverseMap();
                 config.CreateMap<ReturnCouponDto, Coupon>().ReverseMap();
+                config.CreateMap<RewardCoupon, RewardCouponDto>().ReverseMap();
             });
             return mappingConfig;
         }

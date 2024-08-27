@@ -41,6 +41,15 @@ namespace ProductService.Service
             });
         }
 
+        public async Task<ResponseDto?> GetAllRewardCouponsAsync()
+        {
+            return await baseService.SendAsync(new RequestDto()
+            {
+                ApiType = SD.ApiType.GET,
+                Url = SD.CouponApiBase + "/api/coupon/GetAllRewardCoupons"
+            });
+        }
+
         public async Task<ResponseDto?> GetCouponByCodeAsync(string couponCode)
         {
             return await baseService.SendAsync(new RequestDto()

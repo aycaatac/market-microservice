@@ -3,48 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\controllers\\rewardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\controllers\\rewardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\controllers\\rewardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\controllers\\rewardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\service\\rewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\service\\rewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\message\\rewardmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\message\\rewardmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\services\\irewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\services\\irewardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\models\\reward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\models\\reward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\services\\rewardserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\services\\rewardserviceimp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\reward\\rewardcoupongainindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\reward\\rewardcoupongainindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\rewardservice.api\\messaging\\azureservicebusconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C1203F0-3D57-46B7-A886-A5B2A0CD083F}|RewardService.API\\RewardService.API.csproj|solutionrelative:rewardservice.api\\messaging\\azureservicebusconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|c:\\users\\lenovo\\documents\\github\\market-microservice\\microservicessolution\\productservice.ui\\views\\reward\\rewardindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C6CC56F8-C3BF-4599-8743-5177176B7D64}|ProductService.UI\\ProductService.csproj|solutionrelative:productservice.ui\\views\\reward\\rewardindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 518,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,145 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\appsettings.json",
-              "RelativeDocumentMoniker": "ProductService.UI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\appsettings.json",
-              "RelativeToolTip": "ProductService.UI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-26T11:09:28.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRewardService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Services\\IRewardService.cs",
-              "RelativeDocumentMoniker": "RewardService.API\\Services\\IRewardService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Services\\IRewardService.cs",
-              "RelativeToolTip": "RewardService.API\\Services\\IRewardService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T10:44:48.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Reward.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Models\\Reward.cs",
-              "RelativeDocumentMoniker": "RewardService.API\\Models\\Reward.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Models\\Reward.cs",
-              "RelativeToolTip": "RewardService.API\\Models\\Reward.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T10:42:42.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RewardMessage.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Message\\RewardMessage.cs",
-              "RelativeDocumentMoniker": "RewardService.API\\Message\\RewardMessage.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Message\\RewardMessage.cs",
-              "RelativeToolTip": "RewardService.API\\Message\\RewardMessage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T10:38:33.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RewardController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Controllers\\RewardController.cs",
-              "RelativeDocumentMoniker": "RewardService.API\\Controllers\\RewardController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Controllers\\RewardController.cs",
-              "RelativeToolTip": "RewardService.API\\Controllers\\RewardController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:27:58.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RewardServiceImp.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Services\\RewardServiceImp.cs",
-              "RelativeDocumentMoniker": "RewardService.API\\Services\\RewardServiceImp.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Services\\RewardServiceImp.cs",
-              "RelativeToolTip": "RewardService.API\\Services\\RewardServiceImp.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:27:07.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RewardService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Service\\RewardService.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Service\\RewardService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Service\\RewardService.cs",
-              "RelativeToolTip": "ProductService.UI\\Service\\RewardService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:15:33.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RewardCouponGainIndex.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Reward\\RewardCouponGainIndex.cshtml",
-              "RelativeDocumentMoniker": "ProductService.UI\\Views\\Reward\\RewardCouponGainIndex.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Reward\\RewardCouponGainIndex.cshtml",
-              "RelativeToolTip": "ProductService.UI\\Views\\Reward\\RewardCouponGainIndex.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABMAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-26T09:06:14.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RewardController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\RewardController.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Controllers\\RewardController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\RewardController.cs",
-              "RelativeToolTip": "ProductService.UI\\Controllers\\RewardController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAWwBkAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:06:04.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CouponController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\CouponController.cs",
-              "RelativeDocumentMoniker": "ProductService.UI\\Controllers\\CouponController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Controllers\\CouponController.cs",
-              "RelativeToolTip": "ProductService.UI\\Controllers\\CouponController.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAI0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:00:48.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AzureServiceBusConsumer.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Messaging\\AzureServiceBusConsumer.cs",
-              "RelativeDocumentMoniker": "RewardService.API\\Messaging\\AzureServiceBusConsumer.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\RewardService.API\\Messaging\\AzureServiceBusConsumer.cs",
-              "RelativeToolTip": "RewardService.API\\Messaging\\AzureServiceBusConsumer.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAxwDAAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:26:34.815Z",
+              "Title": "RewardIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "RelativeDocumentMoniker": "ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\Documents\\GitHub\\market-microservice\\MicroservicesSolution\\ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "RelativeToolTip": "ProductService.UI\\Views\\Reward\\RewardIndex.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-27T11:12:42.783Z",
               "EditorCaption": ""
             }
           ]

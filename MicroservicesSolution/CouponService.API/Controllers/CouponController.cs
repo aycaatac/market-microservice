@@ -43,6 +43,26 @@ namespace CouponService.API.Controllers
             return resp;
         }
 
+        [HttpGet]      
+        [Route("GetAllRewardCoupons")]
+        public ResponseDto GetAllRewardCoupons() 
+        {
+            ResponseDto resp = new();
+            try
+            {
+                IEnumerable<RewardCoupon> coupons = dbContext.RewardCoupons.ToList();
+                resp.Result = mapper.Map<IEnumerable<RewardCouponDto>>(coupons);
+                resp.IsSuccess = true;
+                return resp;
+            }
+            catch (Exception ex)
+            {
+                resp.IsSuccess = false;
+                resp.Message = ex.Message;
+            }
+            return resp;
+        }
+
         [HttpGet]
         [Route("GetAllResponse")]
         public ResponseDto GetAllResponse()
